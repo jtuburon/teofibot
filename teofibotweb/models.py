@@ -8,7 +8,7 @@ class User(models.Model):
 	full_name = models.CharField(max_length=200)
 	tag = models.CharField(max_length=200, unique=True)
 	def __str__(self):
-		return self.full_name
+		return self.full_name.encode('utf8')
 
 class AutoResponse(models.Model):
 	label = models.CharField(max_length=200)
@@ -18,7 +18,7 @@ class AutoResponse(models.Model):
 	sticker= models.CharField(blank=True, null=True, max_length=200)
 
 	def __str__(self):
-		return self.label
+		return self.label.encode('utf8')
 
 
 class TextInputPattern(models.Model):
@@ -32,5 +32,5 @@ class TextInputPattern(models.Model):
 	senders= models.ManyToManyField(User, blank=True, null=True)
 
 	def __str__(self):
-		return self.label
+		return self.label.encode('utf8')
 
