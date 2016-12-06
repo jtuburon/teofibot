@@ -1,11 +1,11 @@
 import cv2 as cv;
 
 def addSmiles(input_photo):
-        smile = cv.imread("data/smile.png")
+        smile = cv.imread("resources/data/smile.png")
         smile_mat = cv.cv.fromarray(smile)
 
         image = cv.imread(input_photo)
-        haar = cv.cv.Load('data/haarcascade_frontalface_default.xml')
+        haar = cv.cv.Load('resources/data/haarcascade_frontalface_default.xml')
         image_mat = cv.cv.fromarray(image)
 
         storage = cv.cv.CreateMemStorage()

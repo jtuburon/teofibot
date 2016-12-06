@@ -14,12 +14,13 @@ from pydub import AudioSegment
 from core.photo_ops import *
 from teofibotweb.models import *
 
-
+import random
 
 class TeofiBot():	
 	spammer=False
 	ME= "TeoGol29"
 	store_user=True
+	store_sticker=True
 
 	def __init__(self):
 		self.start_bot()
@@ -43,26 +44,47 @@ class TeofiBot():
 		specialResponse= username==self.ME
 		return (valid, specialResponse)
 
+	def get_random_reply_sticker(self, sticker):
+		tags=sticker.reply_tags.all()
+		stickers= Sticker.objects.filter(tags__in= tags).exclude(file_id=sticker.file_id)
+		s = random.choice(stickers)
+		return s
 
 	def responseToAStickerCachonism(self, bot, update):
 		message= update["message"]
-		sticker_id="BQADAQADVQEAAu5TXgAB3Msx1NXQfOkC"
+		sticker= message["sticker"]
+
 		user= message.from_user["username"]
 		if user=="":
-			user= message.from_user["first_name"]	
-		if user not in [self.ME]:
-			if message.sticker.file_id in [sticker_id]:
-				responseText= "Hey %s. Soy TeofiBot, Veo que tienes sabor..." % user
-				bot.sendMessage(chat_id=update.message.chat_id, text=responseText)
-			else:
-				responseText= "Hey %s. Soy TeofiBot, No mas stickers tontrones. Manda algo de sabor como esto..." % user
-				bot.sendMessage(chat_id=update.message.chat_id, text=responseText)
-				bot.sendSticker(chat_id=update.message.chat_id, sticker=sticker_id)
+			user= message.from_user["first_name"]
+		
+		received_sticker = Sticker.objects.get(file_id=sticker.file_id)
+		reply_sticker= self.get_random_reply_sticker(received_sticker)
 
-	def update_user(self, username, full_name):
+		if received_sticker!=None:			
+			if user not in [self.ME]:
+				responseText= received_sticker.reply % user
+			else:
+				responseText= received_sticker.specialReply % user
+		else:
+			sticker= bot.getFile(sticker.file_id)
+			self.save_sticker(sticker);
+
+		sticker_id="BQADAQADVQEAAu5TXgAB3Msx1NXQfOkC"
+		bot.sendMessage(chat_id=update.message.chat_id, text=responseText)
+		bot.sendSticker(chat_id=update.message.chat_id, sticker=reply_sticker.file_id)
+
+	def save_user(self, username, full_name):
 		u =User(tag=username, full_name=full_name)
 		try:
 			u.save()
+		except:
+			pass
+
+	def save_sticker(self, sticker):
+		s =Sticker(file_id= sticker.file_id, file_path=sticker.file_path)
+		try:
+			s.save()
 		except:
 			pass
 
@@ -77,7 +99,7 @@ class TeofiBot():
 			user= full_name
 
 		if self.store_user:
-			self.update_user(user, full_name);
+			self.save_user(user, full_name);
 		
 		patterns= TextInputPattern.objects.all()
 		for p in patterns:
