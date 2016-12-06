@@ -58,8 +58,11 @@ class TeofiBot():
 		if user=="":
 			user= message.from_user["first_name"]
 		
-		received_sticker = Sticker.objects.get(file_id=sticker.file_id)
-		reply_sticker= self.get_random_reply_sticker(received_sticker)
+		try:
+			received_sticker = Sticker.objects.get(file_id=sticker.file_id)		
+			reply_sticker= self.get_random_reply_sticker(received_sticker)
+		except:
+			received_sticker=None
 
 		if received_sticker!=None:			
 			if user not in [self.ME]:
@@ -70,7 +73,6 @@ class TeofiBot():
 			sticker= bot.getFile(sticker.file_id)
 			self.save_sticker(sticker);
 
-		sticker_id="BQADAQADVQEAAu5TXgAB3Msx1NXQfOkC"
 		bot.sendMessage(chat_id=update.message.chat_id, text=responseText)
 		bot.sendSticker(chat_id=update.message.chat_id, sticker=reply_sticker.file_id)
 
