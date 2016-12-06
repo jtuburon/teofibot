@@ -1,0 +1,704 @@
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+
+System check identified 3 issues (0 silenced).
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py:76: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+[06/Dec/2016 18:27:07] "GET /admin/ HTTP/1.1" 200 8454
+[06/Dec/2016 18:27:07] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[06/Dec/2016 18:27:07] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[06/Dec/2016 18:27:07] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[06/Dec/2016 18:27:08] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 18:27:08] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 18:27:08] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 18:27:08] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[06/Dec/2016 18:27:08] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+Internal Server Error: /admin/teofibotweb/sticker/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py", line 39, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 544, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/sites.py", line 211, in inner
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/options.py", line 1543, in changelist_view
+    self.list_max_show_all, self.list_editable, self,
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/views/main.py", line 79, in __init__
+    self.get_results(request)
+  File "/usr/local/lib/python2.7/dist-packages/django/contrib/admin/views/main.py", line 172, in get_results
+    result_count = paginator.count
+  File "/usr/local/lib/python2.7/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python2.7/dist-packages/django/core/paginator.py", line 72, in count
+    return self.object_list.count()
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 369, in count
+    return self.query.get_count(using=self.db)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 476, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/query.py", line 457, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/sql/compiler.py", line 835, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/backends/sqlite3/base.py", line 337, in execute
+    return Database.Cursor.execute(self, query, params)
+OperationalError: no such table: teofibotweb_sticker
+[06/Dec/2016 18:27:15] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 500 155234
+[06/Dec/2016 18:27:31] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 3067
+[06/Dec/2016 18:27:32] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[06/Dec/2016 18:27:32] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[06/Dec/2016 18:27:32] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[06/Dec/2016 18:27:32] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[06/Dec/2016 18:27:32] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[06/Dec/2016 18:27:32] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[06/Dec/2016 18:27:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:27:32] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[06/Dec/2016 18:27:32] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[06/Dec/2016 18:27:32] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[06/Dec/2016 18:27:32] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[06/Dec/2016 18:27:32] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[06/Dec/2016 18:27:32] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 18:27:32] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 18:27:32] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 18:27:32] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[06/Dec/2016 18:27:43] "GET /admin/teofibotweb/ HTTP/1.1" 200 3980
+[06/Dec/2016 18:27:56] "GET /admin/teofibotweb/tag/ HTTP/1.1" 200 3039
+[06/Dec/2016 18:27:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:27:58] "GET /admin/teofibotweb/tag/add/ HTTP/1.1" 200 4305
+[06/Dec/2016 18:27:58] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[06/Dec/2016 18:27:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:27:58] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[06/Dec/2016 18:27:58] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[06/Dec/2016 18:27:58] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[06/Dec/2016 18:28:36] "POST /admin/teofibotweb/tag/add/ HTTP/1.1" 302 0
+[06/Dec/2016 18:28:36] "GET /admin/teofibotweb/tag/ HTTP/1.1" 200 4358
+[06/Dec/2016 18:28:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:28:36] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[06/Dec/2016 18:28:38] "GET /admin/teofibotweb/tag/add/ HTTP/1.1" 200 4305
+[06/Dec/2016 18:28:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:29:15] "POST /admin/teofibotweb/tag/add/ HTTP/1.1" 302 0
+[06/Dec/2016 18:29:15] "GET /admin/teofibotweb/tag/ HTTP/1.1" 200 4588
+[06/Dec/2016 18:29:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:29:18] "GET /admin/teofibotweb/tag/add/ HTTP/1.1" 200 4305
+[06/Dec/2016 18:29:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:29:37] "POST /admin/teofibotweb/tag/add/ HTTP/1.1" 302 0
+[06/Dec/2016 18:29:37] "GET /admin/teofibotweb/tag/ HTTP/1.1" 200 4802
+[06/Dec/2016 18:29:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:29:50] "GET /admin/teofibotweb/tag/add/ HTTP/1.1" 200 4305
+[06/Dec/2016 18:29:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:29:58] "POST /admin/teofibotweb/tag/add/ HTTP/1.1" 302 0
+[06/Dec/2016 18:29:58] "GET /admin/teofibotweb/tag/add/ HTTP/1.1" 200 4516
+[06/Dec/2016 18:29:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:30:10] "POST /admin/teofibotweb/tag/add/ HTTP/1.1" 302 0
+[06/Dec/2016 18:30:11] "GET /admin/teofibotweb/tag/ HTTP/1.1" 200 5255
+[06/Dec/2016 18:30:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:30:13] "GET /admin/teofibotweb/tag/add/ HTTP/1.1" 200 4305
+[06/Dec/2016 18:30:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:30:39] "POST /admin/teofibotweb/tag/add/ HTTP/1.1" 302 0
+[06/Dec/2016 18:30:39] "GET /admin/teofibotweb/tag/ HTTP/1.1" 200 5484
+[06/Dec/2016 18:30:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:30:49] "GET /admin/teofibotweb/tag/add/ HTTP/1.1" 200 4305
+[06/Dec/2016 18:30:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:30:54] "POST /admin/teofibotweb/tag/add/ HTTP/1.1" 302 0
+[06/Dec/2016 18:30:55] "GET /admin/teofibotweb/tag/ HTTP/1.1" 200 5705
+[06/Dec/2016 18:30:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:31:19] "GET /admin/teofibotweb/ HTTP/1.1" 200 3980
+[06/Dec/2016 18:31:21] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 3067
+[06/Dec/2016 18:31:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+2016-12-06 18:31:47,272 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py", line 102, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/pi/teofibot/core/teofibot.py", line 61, in responseToAStickerCachonism
+    received_sticker = Sticker.objects.get(file_id=sticker.file_id)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: Sticker matching query does not exist.
+2016-12-06 18:31:48,052 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py", line 102, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/pi/teofibot/core/teofibot.py", line 61, in responseToAStickerCachonism
+    received_sticker = Sticker.objects.get(file_id=sticker.file_id)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: Sticker matching query does not exist.
+2016-12-06 18:31:48,922 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py", line 102, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/pi/teofibot/core/teofibot.py", line 61, in responseToAStickerCachonism
+    received_sticker = Sticker.objects.get(file_id=sticker.file_id)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: Sticker matching query does not exist.
+2016-12-06 18:31:52,962 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py", line 102, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/pi/teofibot/core/teofibot.py", line 61, in responseToAStickerCachonism
+    received_sticker = Sticker.objects.get(file_id=sticker.file_id)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: Sticker matching query does not exist.
+2016-12-06 18:32:02,489 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py", line 102, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/pi/teofibot/core/teofibot.py", line 61, in responseToAStickerCachonism
+    received_sticker = Sticker.objects.get(file_id=sticker.file_id)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: Sticker matching query does not exist.
+2016-12-06 18:32:03,263 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py", line 102, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/pi/teofibot/core/teofibot.py", line 61, in responseToAStickerCachonism
+    received_sticker = Sticker.objects.get(file_id=sticker.file_id)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: Sticker matching query does not exist.
+2016-12-06 18:32:04,136 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py", line 102, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/pi/teofibot/core/teofibot.py", line 61, in responseToAStickerCachonism
+    received_sticker = Sticker.objects.get(file_id=sticker.file_id)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: Sticker matching query does not exist.
+2016-12-06 18:32:05,258 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py", line 102, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/pi/teofibot/core/teofibot.py", line 61, in responseToAStickerCachonism
+    received_sticker = Sticker.objects.get(file_id=sticker.file_id)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: Sticker matching query does not exist.
+2016-12-06 18:32:14,129 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py", line 102, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/pi/teofibot/core/teofibot.py", line 61, in responseToAStickerCachonism
+    received_sticker = Sticker.objects.get(file_id=sticker.file_id)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: Sticker matching query does not exist.
+2016-12-06 18:32:15,054 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py", line 102, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/pi/teofibot/core/teofibot.py", line 61, in responseToAStickerCachonism
+    received_sticker = Sticker.objects.get(file_id=sticker.file_id)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python2.7/dist-packages/django/db/models/query.py", line 385, in get
+    self.model._meta.object_name
+DoesNotExist: Sticker matching query does not exist.
+[06/Dec/2016 18:32:19] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 3067
+[06/Dec/2016 18:32:19] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[06/Dec/2016 18:32:19] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[06/Dec/2016 18:32:19] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[06/Dec/2016 18:32:19] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[06/Dec/2016 18:32:19] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[06/Dec/2016 18:32:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:32:19] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[06/Dec/2016 18:32:19] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[06/Dec/2016 18:32:19] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[06/Dec/2016 18:32:19] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[06/Dec/2016 18:32:19] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[06/Dec/2016 18:32:19] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[06/Dec/2016 18:32:19] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 18:32:19] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 18:32:19] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 18:32:19] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[06/Dec/2016 18:32:35] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 3067
+[06/Dec/2016 18:32:35] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[06/Dec/2016 18:32:35] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[06/Dec/2016 18:32:35] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[06/Dec/2016 18:32:35] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[06/Dec/2016 18:32:35] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[06/Dec/2016 18:32:35] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[06/Dec/2016 18:32:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:32:35] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[06/Dec/2016 18:32:35] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[06/Dec/2016 18:32:35] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[06/Dec/2016 18:32:35] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[06/Dec/2016 18:32:35] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[06/Dec/2016 18:32:36] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 18:32:36] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 18:32:36] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 18:32:36] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[06/Dec/2016 18:32:39] "GET /admin/teofibotweb/ HTTP/1.1" 200 3980
+[06/Dec/2016 18:34:04] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 3067
+[06/Dec/2016 18:34:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+
+System check identified 3 issues (0 silenced).
+[06/Dec/2016 18:38:54] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 4216
+[06/Dec/2016 18:38:54] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[06/Dec/2016 18:38:54] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[06/Dec/2016 18:38:54] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[06/Dec/2016 18:38:54] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[06/Dec/2016 18:38:54] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[06/Dec/2016 18:38:54] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[06/Dec/2016 18:38:54] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[06/Dec/2016 18:38:54] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[06/Dec/2016 18:38:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:38:54] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[06/Dec/2016 18:38:54] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[06/Dec/2016 18:38:54] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[06/Dec/2016 18:38:55] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 18:38:55] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 18:38:55] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 18:38:55] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[06/Dec/2016 18:40:05] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8182
+[06/Dec/2016 18:40:05] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[06/Dec/2016 18:40:05] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[06/Dec/2016 18:40:05] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[06/Dec/2016 18:40:05] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[06/Dec/2016 18:40:05] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[06/Dec/2016 18:40:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:40:05] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[06/Dec/2016 18:40:05] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[06/Dec/2016 18:40:05] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[06/Dec/2016 18:40:05] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[06/Dec/2016 18:40:05] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[06/Dec/2016 18:40:05] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[06/Dec/2016 18:40:05] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 18:40:05] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 18:40:05] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 18:40:05] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[06/Dec/2016 18:55:02] "GET /admin/teofibotweb/sticker/18/change/ HTTP/1.1" 200 9920
+[06/Dec/2016 18:55:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:55:05] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8182
+[06/Dec/2016 18:55:07] "GET /admin/teofibotweb/sticker/1/change/ HTTP/1.1" 200 9918
+[06/Dec/2016 18:55:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:58:14] "POST /admin/teofibotweb/sticker/1/change/ HTTP/1.1" 302 0
+[06/Dec/2016 18:58:15] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8384
+[06/Dec/2016 18:58:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:58:21] "GET /admin/teofibotweb/sticker/2/change/ HTTP/1.1" 200 9918
+[06/Dec/2016 18:58:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:59:30] "POST /admin/teofibotweb/sticker/2/change/ HTTP/1.1" 302 0
+[06/Dec/2016 18:59:31] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8390
+[06/Dec/2016 18:59:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 18:59:33] "GET /admin/teofibotweb/sticker/3/change/ HTTP/1.1" 200 9918
+[06/Dec/2016 18:59:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:01:31] "POST /admin/teofibotweb/sticker/3/change/ HTTP/1.1" 302 0
+[06/Dec/2016 19:01:31] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8379
+[06/Dec/2016 19:01:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:01:34] "GET /admin/teofibotweb/sticker/3/change/ HTTP/1.1" 200 10050
+[06/Dec/2016 19:01:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:01:38] "POST /admin/teofibotweb/sticker/3/change/ HTTP/1.1" 302 0
+[06/Dec/2016 19:01:38] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8379
+[06/Dec/2016 19:01:38] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:01:41] "GET /admin/teofibotweb/sticker/4/change/ HTTP/1.1" 200 9919
+[06/Dec/2016 19:01:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:03:28] "POST /admin/teofibotweb/sticker/4/change/ HTTP/1.1" 302 0
+[06/Dec/2016 19:03:28] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8394
+[06/Dec/2016 19:03:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:03:31] "GET /admin/teofibotweb/sticker/5/change/ HTTP/1.1" 200 9919
+[06/Dec/2016 19:03:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:05:28] "POST /admin/teofibotweb/sticker/5/change/ HTTP/1.1" 302 0
+[06/Dec/2016 19:05:28] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8624
+[06/Dec/2016 19:05:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:05:32] "GET /admin/teofibotweb/sticker/6/change/ HTTP/1.1" 200 9917
+[06/Dec/2016 19:05:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:06:46] "POST /admin/teofibotweb/sticker/6/change/ HTTP/1.1" 302 0
+[06/Dec/2016 19:06:46] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8623
+[06/Dec/2016 19:06:46] "POST /admin/teofibotweb/sticker/6/change/ HTTP/1.1" 302 0
+[06/Dec/2016 19:06:46] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8770
+[06/Dec/2016 19:06:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:16:42] "GET /admin/teofibotweb/sticker/6/change/ HTTP/1.1" 200 10099
+[06/Dec/2016 19:16:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:19:49] "GET /admin/teofibotweb/ HTTP/1.1" 200 3980
+[06/Dec/2016 19:19:51] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 9676
+[06/Dec/2016 19:19:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:19:52] "GET /admin/teofibotweb/ HTTP/1.1" 200 3980
+[06/Dec/2016 19:19:53] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8429
+[06/Dec/2016 19:19:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:19:55] "GET /admin/teofibotweb/ HTTP/1.1" 200 3980
+[06/Dec/2016 19:19:57] "GET /admin/teofibotweb/textinputpattern/ HTTP/1.1" 200 7293
+[06/Dec/2016 19:19:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:19:59] "GET /admin/teofibotweb/textinputpattern/add/ HTTP/1.1" 200 11838
+[06/Dec/2016 19:19:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:20:20] "GET /admin/teofibotweb/autoresponse/add/?_to_field=id&_popup=1 HTTP/1.1" 200 4929
+[06/Dec/2016 19:20:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:20:29] "GET /admin/teofibotweb/textinputpattern/ HTTP/1.1" 200 7293
+[06/Dec/2016 19:20:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:20:30] "GET /admin/teofibotweb/ HTTP/1.1" 200 3980
+[06/Dec/2016 19:20:32] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 9676
+[06/Dec/2016 19:20:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:20:47] "GET /admin/teofibotweb/ HTTP/1.1" 200 3980
+[06/Dec/2016 19:20:49] "GET /admin/teofibotweb/textinputpattern/ HTTP/1.1" 200 7293
+[06/Dec/2016 19:20:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:21:43] "GET /admin/teofibotweb/textinputpattern/add/ HTTP/1.1" 200 11838
+[06/Dec/2016 19:21:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:22:15] "GET /admin/teofibotweb/autoresponse/add/?_to_field=id&_popup=1 HTTP/1.1" 200 4929
+[06/Dec/2016 19:22:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:22:57] "POST /admin/teofibotweb/autoresponse/add/?_to_field=id&_popup=1 HTTP/1.1" 200 382
+[06/Dec/2016 19:22:57] "GET /static/admin/js/popup_response.js HTTP/1.1" 304 0
+[06/Dec/2016 19:23:02] "GET /admin/teofibotweb/autoresponse/add/?_to_field=id&_popup=1 HTTP/1.1" 200 4929
+[06/Dec/2016 19:23:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:23:52] "POST /admin/teofibotweb/autoresponse/add/?_to_field=id&_popup=1 HTTP/1.1" 200 390
+[06/Dec/2016 19:24:22] "POST /admin/teofibotweb/textinputpattern/add/ HTTP/1.1" 302 0
+[06/Dec/2016 19:24:22] "GET /admin/teofibotweb/textinputpattern/ HTTP/1.1" 200 7761
+[06/Dec/2016 19:24:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:28:14] "GET /admin/teofibotweb/textinputpattern/14/change/ HTTP/1.1" 200 12400
+[06/Dec/2016 19:28:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:28:20] "GET /admin/teofibotweb/textinputpattern/ HTTP/1.1" 200 7542
+[06/Dec/2016 19:28:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:28:24] "GET /admin/teofibotweb/ HTTP/1.1" 200 3980
+[06/Dec/2016 19:28:25] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 10192
+[06/Dec/2016 19:28:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:28:27] "GET /admin/teofibotweb/autoresponse/25/change/ HTTP/1.1" 200 6296
+[06/Dec/2016 19:28:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:28:33] "POST /admin/teofibotweb/autoresponse/25/change/ HTTP/1.1" 302 0
+[06/Dec/2016 19:28:33] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 10421
+[06/Dec/2016 19:28:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:28:34] "GET /admin/teofibotweb/autoresponse/24/change/ HTTP/1.1" 200 6280
+[06/Dec/2016 19:28:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:28:41] "POST /admin/teofibotweb/autoresponse/24/change/ HTTP/1.1" 302 0
+[06/Dec/2016 19:28:41] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 10413
+[06/Dec/2016 19:28:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:28:45] "GET /admin/teofibotweb/autoresponse/25/change/ HTTP/1.1" 200 6297
+[06/Dec/2016 19:28:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:28:48] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 10192
+[06/Dec/2016 19:28:50] "GET /admin/teofibotweb/autoresponse/24/change/ HTTP/1.1" 200 6281
+[06/Dec/2016 19:28:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:28:58] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 10192
+[06/Dec/2016 19:29:00] "GET /admin/teofibotweb/autoresponse/25/change/ HTTP/1.1" 200 6297
+[06/Dec/2016 19:29:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:29:04] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 10192
+[06/Dec/2016 19:29:06] "GET /admin/teofibotweb/autoresponse/24/change/ HTTP/1.1" 200 6281
+[06/Dec/2016 19:29:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:29:09] "POST /admin/teofibotweb/autoresponse/24/change/ HTTP/1.1" 302 0
+[06/Dec/2016 19:29:09] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 10413
+[06/Dec/2016 19:29:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:30:07] "GET /admin/teofibotweb/ HTTP/1.1" 200 3980
+[06/Dec/2016 19:30:09] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8429
+[06/Dec/2016 19:30:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:30:12] "GET /admin/teofibotweb/sticker/7/change/ HTTP/1.1" 200 9917
+[06/Dec/2016 19:30:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:31:15] "POST /admin/teofibotweb/sticker/7/change/ HTTP/1.1" 302 0
+[06/Dec/2016 19:31:15] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8633
+[06/Dec/2016 19:31:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:31:18] "GET /admin/teofibotweb/sticker/8/change/ HTTP/1.1" 200 9919
+[06/Dec/2016 19:31:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:32:02] "GET /admin/teofibotweb/tag/add/?_to_field=id&_popup=1 HTTP/1.1" 200 3347
+[06/Dec/2016 19:32:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:32:15] "POST /admin/teofibotweb/tag/add/?_to_field=id&_popup=1 HTTP/1.1" 200 360
+[06/Dec/2016 19:32:22] "POST /admin/teofibotweb/sticker/8/change/ HTTP/1.1" 302 0
+[06/Dec/2016 19:32:23] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8638
+[06/Dec/2016 19:32:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:32:25] "GET /admin/teofibotweb/sticker/8/change/ HTTP/1.1" 200 10159
+[06/Dec/2016 19:32:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:33:04] "POST /admin/teofibotweb/sticker/8/change/ HTTP/1.1" 302 0
+[06/Dec/2016 19:33:04] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8638
+[06/Dec/2016 19:33:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:36:00] "GET /admin/teofibotweb/sticker/8/change/ HTTP/1.1" 200 10153
+[06/Dec/2016 19:36:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:36:37] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8439
+[06/Dec/2016 19:36:40] "GET /admin/teofibotweb/sticker/9/change/ HTTP/1.1" 200 9985
+[06/Dec/2016 19:36:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:38:24] "POST /admin/teofibotweb/sticker/9/change/ HTTP/1.1" 302 0
+[06/Dec/2016 19:38:24] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8653
+[06/Dec/2016 19:38:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:38:46] "GET /admin/teofibotweb/sticker/9/change/ HTTP/1.1" 200 10113
+[06/Dec/2016 19:38:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:39:03] "GET /admin/teofibotweb/tag/add/?_to_field=id&_popup=1 HTTP/1.1" 200 3347
+[06/Dec/2016 19:39:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:39:09] "POST /admin/teofibotweb/tag/add/?_to_field=id&_popup=1 HTTP/1.1" 200 369
+[06/Dec/2016 19:40:01] "POST /admin/teofibotweb/sticker/9/change/ HTTP/1.1" 302 0
+[06/Dec/2016 19:40:02] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8653
+[06/Dec/2016 19:40:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:40:27] "GET /admin/teofibotweb/sticker/9/change/ HTTP/1.1" 200 10276
+[06/Dec/2016 19:40:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:41:08] "POST /admin/teofibotweb/sticker/9/change/ HTTP/1.1" 302 0
+[06/Dec/2016 19:41:08] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8653
+[06/Dec/2016 19:41:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:41:30] "GET /admin/teofibotweb/sticker/3/change/ HTTP/1.1" 200 10200
+[06/Dec/2016 19:41:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:41:53] "POST /admin/teofibotweb/sticker/3/change/ HTTP/1.1" 302 0
+[06/Dec/2016 19:41:53] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8640
+[06/Dec/2016 19:41:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:42:19] "GET /admin/teofibotweb/sticker/3/change/ HTTP/1.1" 200 10220
+[06/Dec/2016 19:42:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:44:21] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8449
+[06/Dec/2016 19:44:23] "GET /admin/teofibotweb/sticker/19/change/ HTTP/1.1" 200 10070
+[06/Dec/2016 19:44:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:44:26] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8449
+[06/Dec/2016 19:44:27] "GET /admin/teofibotweb/sticker/18/change/ HTTP/1.1" 200 10070
+[06/Dec/2016 19:44:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:44:30] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8449
+[06/Dec/2016 19:44:32] "GET /admin/teofibotweb/sticker/10/change/ HTTP/1.1" 200 10071
+[06/Dec/2016 19:44:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:46:29] "POST /admin/teofibotweb/sticker/10/change/ HTTP/1.1" 302 0
+[06/Dec/2016 19:46:29] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8654
+[06/Dec/2016 19:46:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:49:54] "GET /admin/teofibotweb/sticker/3/change/ HTTP/1.1" 200 10220
+[06/Dec/2016 19:49:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:50:15] "POST /admin/teofibotweb/sticker/3/change/ HTTP/1.1" 302 0
+[06/Dec/2016 19:50:15] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8645
+[06/Dec/2016 19:50:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:50:19] "GET /admin/teofibotweb/sticker/11/change/ HTTP/1.1" 200 10069
+[06/Dec/2016 19:50:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:50:59] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8454
+[06/Dec/2016 19:51:02] "GET /admin/teofibotweb/sticker/6/change/ HTTP/1.1" 200 10249
+[06/Dec/2016 19:51:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:51:06] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8454
+[06/Dec/2016 19:51:09] "GET /admin/teofibotweb/sticker/11/change/ HTTP/1.1" 200 10069
+[06/Dec/2016 19:51:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:52:45] "POST /admin/teofibotweb/sticker/11/change/ HTTP/1.1" 302 0
+[06/Dec/2016 19:52:46] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8649
+[06/Dec/2016 19:52:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+
+System check identified 3 issues (0 silenced).
+[06/Dec/2016 19:57:23] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8688
+[06/Dec/2016 19:57:23] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[06/Dec/2016 19:57:23] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[06/Dec/2016 19:57:23] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[06/Dec/2016 19:57:23] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[06/Dec/2016 19:57:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:57:23] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[06/Dec/2016 19:57:23] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[06/Dec/2016 19:57:23] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[06/Dec/2016 19:57:23] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[06/Dec/2016 19:57:23] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[06/Dec/2016 19:57:23] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[06/Dec/2016 19:57:23] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[06/Dec/2016 19:57:23] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 19:57:23] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 19:57:23] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 19:57:23] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[06/Dec/2016 19:57:28] "GET /admin/teofibotweb/sticker/11/change/ HTTP/1.1" 200 10252
+[06/Dec/2016 19:57:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:59:00] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8688
+[06/Dec/2016 19:59:03] "GET /admin/teofibotweb/sticker/20/change/ HTTP/1.1" 200 10069
+[06/Dec/2016 19:59:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:59:06] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8688
+[06/Dec/2016 19:59:07] "GET /admin/teofibotweb/sticker/19/change/ HTTP/1.1" 200 10070
+[06/Dec/2016 19:59:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:59:09] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8688
+[06/Dec/2016 19:59:11] "GET /admin/teofibotweb/sticker/18/change/ HTTP/1.1" 200 10070
+[06/Dec/2016 19:59:11] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:59:13] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8688
+[06/Dec/2016 19:59:33] "GET /admin/teofibotweb/sticker/20/change/ HTTP/1.1" 200 10069
+[06/Dec/2016 19:59:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:59:39] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8688
+[06/Dec/2016 19:59:42] "GET /admin/teofibotweb/sticker/11/change/ HTTP/1.1" 200 10252
+[06/Dec/2016 19:59:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:59:44] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8688
+[06/Dec/2016 19:59:51] "GET /admin/teofibotweb/sticker/11/change/ HTTP/1.1" 200 10252
+[06/Dec/2016 19:59:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 19:59:57] "GET /admin/teofibotweb/sticker/11/change/ HTTP/1.1" 200 10252
+[06/Dec/2016 20:00:06] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8688
+[06/Dec/2016 20:00:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:00:08] "GET /admin/teofibotweb/sticker/20/change/ HTTP/1.1" 200 10069
+[06/Dec/2016 20:00:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:00:25] "POST /admin/teofibotweb/sticker/20/change/ HTTP/1.1" 302 0
+[06/Dec/2016 20:00:25] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8883
+[06/Dec/2016 20:00:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:01:05] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8688
+[06/Dec/2016 20:01:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:01:08] "GET /admin/teofibotweb/sticker/20/change/ HTTP/1.1" 200 10252
+[06/Dec/2016 20:01:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:01:10] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8688
+[06/Dec/2016 20:01:12] "GET /admin/teofibotweb/sticker/11/change/ HTTP/1.1" 200 10252
+[06/Dec/2016 20:01:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:01:14] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8688
+[06/Dec/2016 20:01:15] "GET /admin/teofibotweb/sticker/11/change/ HTTP/1.1" 200 10252
+[06/Dec/2016 20:01:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:01:17] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8688
+[06/Dec/2016 20:01:19] "GET /admin/teofibotweb/sticker/12/change/ HTTP/1.1" 200 10069
+[06/Dec/2016 20:01:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:01:21] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8688
+[06/Dec/2016 20:01:23] "GET /admin/teofibotweb/sticker/13/change/ HTTP/1.1" 200 10069
+[06/Dec/2016 20:01:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:01:25] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8688
+[06/Dec/2016 20:01:27] "GET /admin/teofibotweb/sticker/14/change/ HTTP/1.1" 200 10069
+[06/Dec/2016 20:01:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:01:29] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8688
+[06/Dec/2016 20:01:32] "GET /admin/teofibotweb/sticker/14/change/ HTTP/1.1" 200 10069
+[06/Dec/2016 20:01:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:01:33] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8688
+[06/Dec/2016 20:01:35] "GET /admin/teofibotweb/sticker/15/change/ HTTP/1.1" 200 10070
+[06/Dec/2016 20:01:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:01:37] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8688
+[06/Dec/2016 20:01:39] "GET /admin/teofibotweb/sticker/18/change/ HTTP/1.1" 200 10070
+[06/Dec/2016 20:01:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:01:41] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8688
+[06/Dec/2016 20:01:43] "GET /admin/teofibotweb/sticker/19/change/ HTTP/1.1" 200 10070
+[06/Dec/2016 20:01:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:01:45] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8688
+[06/Dec/2016 20:01:51] "GET /admin/teofibotweb/sticker/3/change/ HTTP/1.1" 200 10220
+[06/Dec/2016 20:01:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:03:15] "GET /admin/teofibotweb/sticker/3/change/ HTTP/1.1" 200 10220
+[06/Dec/2016 20:03:15] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:03:31] "POST /admin/teofibotweb/sticker/3/change/ HTTP/1.1" 302 0
+[06/Dec/2016 20:03:31] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8879
+[06/Dec/2016 20:03:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:09:24] "GET /admin/teofibotweb/sticker/11/change/ HTTP/1.1" 200 10252
+[06/Dec/2016 20:09:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:09:36] "POST /admin/teofibotweb/sticker/11/change/ HTTP/1.1" 302 0
+[06/Dec/2016 20:09:36] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8883
+[06/Dec/2016 20:09:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:09:40] "GET /admin/teofibotweb/sticker/12/change/ HTTP/1.1" 200 10069
+[06/Dec/2016 20:09:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:10:06] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8688
+[06/Dec/2016 20:10:08] "GET /admin/teofibotweb/sticker/11/change/ HTTP/1.1" 200 10252
+[06/Dec/2016 20:10:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:10:23] "POST /admin/teofibotweb/sticker/12/change/ HTTP/1.1" 302 0
+[06/Dec/2016 20:10:23] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8883
+[06/Dec/2016 20:10:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:10:25] "GET /admin/teofibotweb/sticker/13/change/ HTTP/1.1" 200 10069
+[06/Dec/2016 20:10:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:10:48] "POST /admin/teofibotweb/sticker/13/change/ HTTP/1.1" 302 0
+[06/Dec/2016 20:10:48] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8883
+[06/Dec/2016 20:10:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:10:50] "GET /admin/teofibotweb/sticker/14/change/ HTTP/1.1" 200 10069
+[06/Dec/2016 20:10:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:11:10] "POST /admin/teofibotweb/sticker/14/change/ HTTP/1.1" 302 0
+[06/Dec/2016 20:11:10] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8883
+[06/Dec/2016 20:11:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:11:18] "GET /admin/teofibotweb/sticker/15/change/ HTTP/1.1" 200 10070
+[06/Dec/2016 20:11:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:12:50] "POST /admin/teofibotweb/sticker/15/change/ HTTP/1.1" 302 0
+[06/Dec/2016 20:12:50] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8877
+[06/Dec/2016 20:12:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:12:52] "GET /admin/teofibotweb/sticker/16/change/ HTTP/1.1" 200 10070
+[06/Dec/2016 20:12:52] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:12:58] "POST /admin/teofibotweb/sticker/16/change/ HTTP/1.1" 302 0
+[06/Dec/2016 20:12:59] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8874
+[06/Dec/2016 20:12:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:13:01] "GET /admin/teofibotweb/sticker/17/change/ HTTP/1.1" 200 10070
+[06/Dec/2016 20:13:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:13:06] "POST /admin/teofibotweb/sticker/17/change/ HTTP/1.1" 302 0
+[06/Dec/2016 20:13:07] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8871
+[06/Dec/2016 20:13:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:13:10] "GET /admin/teofibotweb/sticker/18/change/ HTTP/1.1" 200 10070
+[06/Dec/2016 20:13:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:13:25] "POST /admin/teofibotweb/sticker/18/change/ HTTP/1.1" 302 0
+[06/Dec/2016 20:13:25] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8870
+[06/Dec/2016 20:13:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:13:27] "GET /admin/teofibotweb/sticker/15/change/ HTTP/1.1" 200 10082
+[06/Dec/2016 20:13:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:13:30] "POST /admin/teofibotweb/sticker/15/change/ HTTP/1.1" 302 0
+[06/Dec/2016 20:13:30] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8871
+[06/Dec/2016 20:13:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:13:32] "GET /admin/teofibotweb/sticker/16/change/ HTTP/1.1" 200 10082
+[06/Dec/2016 20:13:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:13:36] "POST /admin/teofibotweb/sticker/16/change/ HTTP/1.1" 302 0
+[06/Dec/2016 20:13:37] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8872
+[06/Dec/2016 20:13:37] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:13:39] "GET /admin/teofibotweb/sticker/17/change/ HTTP/1.1" 200 10064
+[06/Dec/2016 20:13:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:13:42] "POST /admin/teofibotweb/sticker/17/change/ HTTP/1.1" 302 0
+[06/Dec/2016 20:13:43] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8873
+[06/Dec/2016 20:13:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:13:44] "GET /admin/teofibotweb/sticker/19/change/ HTTP/1.1" 200 10070
+[06/Dec/2016 20:13:44] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:15:02] "POST /admin/teofibotweb/sticker/19/change/ HTTP/1.1" 302 0
+[06/Dec/2016 20:15:02] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8863
+[06/Dec/2016 20:15:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:15:07] "GET /admin/teofibotweb/sticker/20/change/ HTTP/1.1" 200 10252
+[06/Dec/2016 20:15:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:15:13] "POST /admin/teofibotweb/sticker/20/change/ HTTP/1.1" 302 0
+[06/Dec/2016 20:15:13] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8869
+[06/Dec/2016 20:15:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:15:17] "GET /admin/teofibotweb/sticker/20/change/ HTTP/1.1" 200 10252
+[06/Dec/2016 20:15:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 20:15:27] "POST /admin/teofibotweb/sticker/20/change/ HTTP/1.1" 302 0
+[06/Dec/2016 20:15:27] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 8869
+[06/Dec/2016 20:15:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+
+System check identified 3 issues (0 silenced).
+Error: That port is already in use.
