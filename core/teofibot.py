@@ -61,7 +61,8 @@ class TeofiBot():
 		try:
 			received_sticker = Sticker.objects.get(file_id=sticker.file_id)		
 			reply_sticker= self.get_random_reply_sticker(received_sticker)
-		except:
+		except Exception as e:
+			raise e
 			received_sticker=None
 
 		if received_sticker!=None:			
