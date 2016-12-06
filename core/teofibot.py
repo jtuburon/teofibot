@@ -72,6 +72,7 @@ class TeofiBot():
 			bot.sendMessage(chat_id=update.message.chat_id, text=responseText)
 			bot.sendSticker(chat_id=update.message.chat_id, sticker=reply_sticker.file_id)
 		else:
+			print sticker.file_id
 			sticker= bot.getFile(sticker.file_id)
 			self.save_sticker(sticker);
 
