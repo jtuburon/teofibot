@@ -49,17 +49,27 @@ class Sticker(models.Model):
 	is_cool= models.BooleanField(default=False)
 	pub_date = models.DateTimeField('publication date', default=datetime.now)
 	tags= models.ManyToManyField(Tag, blank=True, null=True)
-	reply_tags= models.ManyToManyField(Tag, blank=True, null=True, related_name="replyTags")
-
-	reply = models.TextField(blank=True, null=True)
-	specialReply = models.TextField(blank=True, null=True)
-
-
+	
 	def image_tag(self):
 	    return u'<img height="128px" width="128px" src="%s" />' % self.file_path
 
 	image_tag.short_description = 'Image'
 	image_tag.allow_tags = True
+
+	def __str__(self):
+		return self.label.encode('utf8')
+
+
+class StickerResponse(models.Model):
+	label = models.CharField(max_length=200, default="NOT LABELED")
+
+	stickers= models.ManyToManyField(Sticker, blank=True, null=True, related_name="stickers")
+	
+	tags= models.ManyToManyField(Tag, blank=True, null=True)
+	reply_tags= models.ManyToManyField(Tag, blank=True, null=True, related_name="replyTags")
+
+	reply = models.TextField(blank=True, null=True)
+	specialReply = models.TextField(blank=True, null=True)
 
 	def __str__(self):
 		return self.label.encode('utf8')

@@ -44,9 +44,11 @@ class TeofiBot():
 		specialResponse= username==self.ME
 		return (valid, specialResponse)
 
-	def get_random_reply_sticker(self, sticker):
-		tags=sticker.reply_tags.all()
-		stickers= Sticker.objects.filter(tags__in= tags).exclude(file_id=sticker.file_id)
+	def get_random_reply_sticker(self, sticker_id, sticker_response):
+		sticker= Sticker.objects.get(file_id=sticker_id)
+		print sticker
+		tags=sticker_response.reply_tags.all()
+		stickers= Sticker.objects.filter(tags__in= tags).exclude(file_id=sticker_id)
 		s = random.choice(stickers)
 		return s
 
@@ -59,16 +61,16 @@ class TeofiBot():
 			user= message.from_user["first_name"]
 		
 		try:
-			received_sticker = Sticker.objects.get(file_id=sticker.file_id)		
-			reply_sticker= self.get_random_reply_sticker(received_sticker)
+			sticker_response = StickerResponse.objects.get(stickers__file_id=sticker.file_id)		
+			reply_sticker= self.get_random_reply_sticker(sticker.file_id, sticker_response)
 		except:
-			received_sticker=None
+			sticker_response=None
 
-		if received_sticker!=None:			
+		if sticker_response!=None:			
 			if user not in [self.ME]:
-				responseText= received_sticker.reply % user
+				responseText= sticker_response.reply % user
 			else:
-				responseText= received_sticker.specialReply % user
+				responseText= sticker_response.specialReply % user
 			bot.sendMessage(chat_id=update.message.chat_id, text=responseText)
 			bot.sendSticker(chat_id=update.message.chat_id, sticker=reply_sticker.file_id)
 		else:
