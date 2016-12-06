@@ -72,7 +72,6 @@ class TeofiBot():
 			bot.sendMessage(chat_id=update.message.chat_id, text=responseText)
 			bot.sendSticker(chat_id=update.message.chat_id, sticker=reply_sticker.file_id)
 		else:
-			print sticker.file_id
 			sticker= bot.getFile(sticker.file_id)
 			self.save_sticker(sticker);
 
@@ -111,9 +110,7 @@ class TeofiBot():
 				senders= p.senders.all()
 
 				valid_user, specialResponse=self.validate_user(senders, user)
-				print valid_user
-				print specialResponse
-
+				
 				if valid_user:
 					if specialResponse==False:
 						if p.response!=None:					
@@ -125,11 +122,8 @@ class TeofiBot():
 					if r!=None:
 						if r.message!=None and r.message!="":
 							responseText= r.message % user
-							print responseText
 							bot.sendMessage(chat_id=update.message.chat_id, text=responseText)
 						
-						print r.audio
-
 						if r.audio!=None and r.audio!="":			
 							audio_path= self.get_resource_path(r.audio)
 							audio=open(audio_path.encode('utf-8'), 'rb')
@@ -137,7 +131,6 @@ class TeofiBot():
 
 						if r.sticker!=None and r.sticker!="":
 							sticker_id=r.sticker
-							print sticker_id
 							bot.sendSticker(chat_id=update.message.chat_id, sticker=sticker_id)
 				
 
