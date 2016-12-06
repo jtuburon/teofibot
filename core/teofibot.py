@@ -69,12 +69,12 @@ class TeofiBot():
 				responseText= received_sticker.reply % user
 			else:
 				responseText= received_sticker.specialReply % user
+			bot.sendMessage(chat_id=update.message.chat_id, text=responseText)
+			bot.sendSticker(chat_id=update.message.chat_id, sticker=reply_sticker.file_id)
 		else:
 			sticker= bot.getFile(sticker.file_id)
 			self.save_sticker(sticker);
 
-		bot.sendMessage(chat_id=update.message.chat_id, text=responseText)
-		bot.sendSticker(chat_id=update.message.chat_id, sticker=reply_sticker.file_id)
 
 	def save_user(self, username, full_name):
 		u =User(tag=username, full_name=full_name)
