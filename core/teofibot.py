@@ -25,9 +25,8 @@ class TeofiBot():
 	def __init__(self):
 		self.start_bot()
 
-	def get_resource_path(self, audio_filename):
-		return "resources/"+ audio_filename
-		#return audio_filename
+	def get_resource_path(self, type,  audio_filename):
+		return "resources/"+ type+ "/" + audio_filename
 
 	def validate_user(self, senders, username):
 		users=[s.tag for s in senders]
@@ -127,13 +126,22 @@ class TeofiBot():
 							bot.sendMessage(chat_id=update.message.chat_id, text=responseText)
 						
 						if r.audio!=None and r.audio!="":			
-							audio_path= self.get_resource_path(r.audio)
+							audio_path= self.get_resource_path("sounds", r.audio)
 							audio=open(audio_path.encode('utf-8'), 'rb')
 							bot.sendAudio(chat_id=update.message.chat_id, audio=audio , caption='TeofiBot saboteandote con sabor')
+
+						if r.photo!=None and r.photo!="":
+							photo_path=self.get_resource_path("pics", r.photo)
+							photo=open(photo_path.encode('utf-8'), 'rb')
+							print photo
+							bot.sendPhoto(chat_id=update.message.chat_id, photo=photo)
+							print "mande"
 
 						if r.sticker!=None and r.sticker!="":
 							sticker_id=r.sticker
 							bot.sendSticker(chat_id=update.message.chat_id, sticker=sticker_id)
+
+
 				
 
 	def responseToAPhotoCachonism(self, bot, update):
@@ -163,7 +171,8 @@ class TeofiBot():
 			urllib.urlretrieve (downAudio.file_path, downAudio.file_id)
 			
 			sound1 = AudioSegment.from_file(downAudio.file_id)
-			sound2 = AudioSegment.from_file("mi_creador.mp3")
+			source_path= self.get_resource_path("sounds", "mi_creador.mp3")
+			sound2 = AudioSegment.from_file(source_path)
 
 			sound1 = sound1 + 1
 			sound2 = sound2 - 8

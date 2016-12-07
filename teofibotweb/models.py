@@ -23,6 +23,7 @@ class AutoResponse(models.Model):
 	message = models.TextField(blank=True, null=True)
 	audio= models.CharField(blank=True, null=True, max_length=200)
 	sticker= models.CharField(blank=True, null=True, max_length=200)
+	photo= models.CharField(blank=True, null=True, max_length=200)
 
 	def __str__(self):
 		return self.label.encode('utf8')
