@@ -702,3 +702,460 @@ teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyTo
 
 System check identified 3 issues (0 silenced).
 Error: That port is already in use.
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+
+System check identified 5 issues (0 silenced).
+[06/Dec/2016 23:45:19] "GET /admin/teofibotweb/ HTTP/1.1" 200 4439
+[06/Dec/2016 23:45:22] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 9136
+[06/Dec/2016 23:45:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:45:24] "GET /admin/teofibotweb/sticker/22/change/ HTTP/1.1" 200 7547
+[06/Dec/2016 23:45:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:45:32] "POST /admin/teofibotweb/sticker/22/change/ HTTP/1.1" 302 0
+[06/Dec/2016 23:45:33] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 9325
+[06/Dec/2016 23:45:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:45:33] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[06/Dec/2016 23:45:36] "GET /admin/teofibotweb/sticker/22/change/ HTTP/1.1" 200 7561
+[06/Dec/2016 23:45:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:45:40] "POST /admin/teofibotweb/sticker/22/change/ HTTP/1.1" 302 0
+[06/Dec/2016 23:45:40] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 9325
+[06/Dec/2016 23:45:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:45:52] "GET /admin/teofibotweb/ HTTP/1.1" 200 4439
+[06/Dec/2016 23:45:55] "GET /admin/teofibotweb/stickerresponse/ HTTP/1.1" 200 4773
+[06/Dec/2016 23:45:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:45:58] "GET /admin/teofibotweb/stickerresponse/6/change/ HTTP/1.1" 200 8531
+[06/Dec/2016 23:45:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:46:54] "POST /admin/teofibotweb/stickerresponse/6/change/ HTTP/1.1" 302 0
+[06/Dec/2016 23:46:54] "GET /admin/teofibotweb/stickerresponse/ HTTP/1.1" 200 4979
+[06/Dec/2016 23:46:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+Not Found: /admin/teofibotweb/sticker/26/change/
+[06/Dec/2016 23:47:06] "GET /admin/teofibotweb/sticker/26/change/ HTTP/1.1" 404 1822
+[06/Dec/2016 23:47:12] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 9133
+[06/Dec/2016 23:47:21] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 9133
+[06/Dec/2016 23:47:21] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[06/Dec/2016 23:47:21] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[06/Dec/2016 23:47:21] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[06/Dec/2016 23:47:21] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[06/Dec/2016 23:47:21] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[06/Dec/2016 23:47:21] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[06/Dec/2016 23:47:21] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:47:21] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[06/Dec/2016 23:47:21] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[06/Dec/2016 23:47:21] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[06/Dec/2016 23:47:21] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[06/Dec/2016 23:47:21] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[06/Dec/2016 23:47:21] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 23:47:21] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 23:47:21] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 23:47:21] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[06/Dec/2016 23:47:23] "GET /admin/teofibotweb/sticker/15/change/ HTTP/1.1" 200 7561
+[06/Dec/2016 23:47:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:47:49] "GET /admin/teofibotweb/sticker/15/change/ HTTP/1.1" 200 7561
+[06/Dec/2016 23:47:49] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[06/Dec/2016 23:47:49] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[06/Dec/2016 23:47:49] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[06/Dec/2016 23:47:49] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[06/Dec/2016 23:47:49] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[06/Dec/2016 23:47:49] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[06/Dec/2016 23:47:49] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[06/Dec/2016 23:47:49] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[06/Dec/2016 23:47:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:47:49] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[06/Dec/2016 23:47:49] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[06/Dec/2016 23:47:50] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[06/Dec/2016 23:47:50] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[06/Dec/2016 23:47:50] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[06/Dec/2016 23:47:50] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[06/Dec/2016 23:47:50] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[06/Dec/2016 23:47:50] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 23:47:50] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 23:47:50] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 23:47:52] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 9133
+[06/Dec/2016 23:47:54] "GET /admin/teofibotweb/sticker/22/change/ HTTP/1.1" 200 7561
+[06/Dec/2016 23:47:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py:76: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+[06/Dec/2016 23:50:55] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 9133
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:22.693829) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:23.374366) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:23.921419) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:24.441258) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:24.779697) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:25.429825) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:26.020097) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:26.628281) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:27.067943) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:27.455819) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:27.979336) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:28.310238) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:28.840966) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:29.325604) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:29.715415) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:31.147554) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:31.677558) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:32.079619) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:32.334569) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:33.123698) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:33.641059) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:34.252600) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:36.051774) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:36.383841) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:36.729199) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:36.980811) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:37.816138) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:38.153310) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:38.696617) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:40.844938) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:41.843036) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:42.538645) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:43.225703) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:43.966737) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:44.851583) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:45.593937) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:46.237924) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:46.769759) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:47.304076) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:47.939795) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:49.657707) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:50.419318) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:51:51.062219) while time zone support is active.
+  RuntimeWarning)
+[06/Dec/2016 23:52:35] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 18961
+[06/Dec/2016 23:52:35] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[06/Dec/2016 23:52:35] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[06/Dec/2016 23:52:35] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[06/Dec/2016 23:52:35] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[06/Dec/2016 23:52:35] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[06/Dec/2016 23:52:35] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[06/Dec/2016 23:52:35] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[06/Dec/2016 23:52:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:52:35] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[06/Dec/2016 23:52:35] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[06/Dec/2016 23:52:35] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[06/Dec/2016 23:52:35] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[06/Dec/2016 23:52:35] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 23:52:35] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 23:52:35] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[06/Dec/2016 23:52:35] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[06/Dec/2016 23:52:39] "GET /admin/teofibotweb/sticker/23/change/ HTTP/1.1" 200 7548
+[06/Dec/2016 23:52:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:52:50] "POST /admin/teofibotweb/sticker/23/change/ HTTP/1.1" 302 0
+[06/Dec/2016 23:52:51] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 19142
+[06/Dec/2016 23:52:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:52:56] "GET /admin/teofibotweb/sticker/23/change/ HTTP/1.1" 200 7554
+[06/Dec/2016 23:52:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:53:01] "POST /admin/teofibotweb/sticker/23/change/ HTTP/1.1" 302 0
+[06/Dec/2016 23:53:01] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 19148
+[06/Dec/2016 23:53:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:53:10] "GET /admin/teofibotweb/sticker/24/change/ HTTP/1.1" 200 7548
+[06/Dec/2016 23:53:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:53:19] "POST /admin/teofibotweb/sticker/24/change/ HTTP/1.1" 302 0
+[06/Dec/2016 23:53:20] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 19144
+[06/Dec/2016 23:53:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:53:27] "GET /admin/teofibotweb/sticker/25/change/ HTTP/1.1" 200 7548
+[06/Dec/2016 23:53:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:53:41] "POST /admin/teofibotweb/sticker/25/change/ HTTP/1.1" 302 0
+[06/Dec/2016 23:53:42] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 19140
+[06/Dec/2016 23:53:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:53:45] "GET /admin/teofibotweb/sticker/26/change/ HTTP/1.1" 200 7548
+[06/Dec/2016 23:53:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:53:56] "POST /admin/teofibotweb/sticker/26/change/ HTTP/1.1" 302 0
+[06/Dec/2016 23:53:56] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 19138
+[06/Dec/2016 23:53:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:54:00] "GET /admin/teofibotweb/sticker/27/change/ HTTP/1.1" 200 7548
+[06/Dec/2016 23:54:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:54:09] "POST /admin/teofibotweb/sticker/27/change/ HTTP/1.1" 302 0
+[06/Dec/2016 23:54:09] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 19137
+[06/Dec/2016 23:54:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:54:13] "GET /admin/teofibotweb/sticker/28/change/ HTTP/1.1" 200 7548
+[06/Dec/2016 23:54:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:54:33] "POST /admin/teofibotweb/sticker/28/change/ HTTP/1.1" 302 0
+[06/Dec/2016 23:54:33] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 19133
+[06/Dec/2016 23:54:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:54:44.610792) while time zone support is active.
+  RuntimeWarning)
+[06/Dec/2016 23:54:53] "GET /admin/teofibotweb/sticker/29/change/ HTTP/1.1" 200 7548
+[06/Dec/2016 23:54:53] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:55:06] "POST /admin/teofibotweb/sticker/29/change/ HTTP/1.1" 302 0
+[06/Dec/2016 23:55:06] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 19364
+[06/Dec/2016 23:55:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:55:41.344970) while time zone support is active.
+  RuntimeWarning)
+[06/Dec/2016 23:55:59] "GET /admin/teofibotweb/sticker/30/change/ HTTP/1.1" 200 7548
+[06/Dec/2016 23:55:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:56:12] "POST /admin/teofibotweb/sticker/30/change/ HTTP/1.1" 302 0
+[06/Dec/2016 23:56:13] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 19359
+[06/Dec/2016 23:56:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:56:13.974211) while time zone support is active.
+  RuntimeWarning)
+[06/Dec/2016 23:56:18] "GET /admin/teofibotweb/sticker/31/change/ HTTP/1.1" 200 7549
+[06/Dec/2016 23:56:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:56:23.316913) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-06 23:56:29.461108) while time zone support is active.
+  RuntimeWarning)
+[06/Dec/2016 23:56:32] "POST /admin/teofibotweb/sticker/31/change/ HTTP/1.1" 302 0
+[06/Dec/2016 23:56:32] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 19355
+[06/Dec/2016 23:56:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[06/Dec/2016 23:56:36] "GET /admin/teofibotweb/sticker/32/change/ HTTP/1.1" 200 7548
+[06/Dec/2016 23:56:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 00:00:58] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 19164
+[07/Dec/2016 00:00:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 00:01:01] "GET /admin/teofibotweb/sticker/65/change/ HTTP/1.1" 200 7568
+[07/Dec/2016 00:01:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 00:01:32] "GET /admin/teofibotweb/sticker/65/change/ HTTP/1.1" 200 7552
+[07/Dec/2016 00:01:32] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[07/Dec/2016 00:01:32] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[07/Dec/2016 00:01:32] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[07/Dec/2016 00:01:32] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[07/Dec/2016 00:01:32] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[07/Dec/2016 00:01:32] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 00:01:32] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[07/Dec/2016 00:01:32] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[07/Dec/2016 00:01:32] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[07/Dec/2016 00:01:32] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[07/Dec/2016 00:01:32] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[07/Dec/2016 00:01:32] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[07/Dec/2016 00:01:32] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[07/Dec/2016 00:01:32] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[07/Dec/2016 00:01:32] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[07/Dec/2016 00:01:33] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[07/Dec/2016 00:01:33] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[07/Dec/2016 00:01:33] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[07/Dec/2016 00:01:33] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[07/Dec/2016 00:01:47] "POST /admin/teofibotweb/sticker/65/change/ HTTP/1.1" 302 0
+[07/Dec/2016 00:01:47] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 19083
+[07/Dec/2016 00:01:47] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 00:01:50] "GET /admin/teofibotweb/sticker/64/change/ HTTP/1.1" 200 7553
+[07/Dec/2016 00:01:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 00:01:55] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 18894
+[07/Dec/2016 00:01:57] "GET /admin/teofibotweb/sticker/62/change/ HTTP/1.1" 200 7553
+[07/Dec/2016 00:01:57] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+2016-12-07 00:02:04,120 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15.0)",)': /bot230721037:AAFoiOPvOkvOHdVfF5Bi0veAS7qtaueIX0M/getUpdates
+2016-12-07 00:02:44,164 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x70dee330>: Failed to establish a new connection: [Errno -2] Name or service not known',)': /bot230721037:AAFoiOPvOkvOHdVfF5Bi0veAS7qtaueIX0M/getUpdates
+[07/Dec/2016 00:02:45] "GET /admin/teofibotweb/sticker/62/change/ HTTP/1.1" 200 7553
+[07/Dec/2016 00:02:45] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[07/Dec/2016 00:02:45] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[07/Dec/2016 00:02:45] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[07/Dec/2016 00:02:45] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[07/Dec/2016 00:02:45] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[07/Dec/2016 00:02:45] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[07/Dec/2016 00:02:45] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[07/Dec/2016 00:02:45] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[07/Dec/2016 00:02:45] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[07/Dec/2016 00:02:45] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 00:02:45] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[07/Dec/2016 00:02:45] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[07/Dec/2016 00:02:45] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[07/Dec/2016 00:02:46] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[07/Dec/2016 00:02:46] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[07/Dec/2016 00:02:46] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[07/Dec/2016 00:02:46] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[07/Dec/2016 00:02:46] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[07/Dec/2016 00:02:46] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[07/Dec/2016 00:02:48] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 18894
+[07/Dec/2016 00:02:50] "GET /admin/teofibotweb/sticker/64/change/ HTTP/1.1" 200 7553
+[07/Dec/2016 00:02:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 00:02:58] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 18894
+[07/Dec/2016 00:03:04] "GET /admin/teofibotweb/stickerresponse/add/ HTTP/1.1" 200 9461
+[07/Dec/2016 00:03:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 00:07:01] "POST /admin/teofibotweb/stickerresponse/add/ HTTP/1.1" 302 0
+[07/Dec/2016 00:07:02] "GET /admin/teofibotweb/stickerresponse/ HTTP/1.1" 200 5220
+[07/Dec/2016 00:07:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-07 00:07:36.226234) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-07 00:07:44.592732) while time zone support is active.
+  RuntimeWarning)
+[07/Dec/2016 00:07:50] "GET /admin/teofibotweb/stickerresponse/7/change/ HTTP/1.1" 200 10820
+[07/Dec/2016 00:07:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 00:07:59] "POST /admin/teofibotweb/stickerresponse/7/change/ HTTP/1.1" 302 0
+[07/Dec/2016 00:07:59] "GET /admin/teofibotweb/stickerresponse/ HTTP/1.1" 200 5222
+[07/Dec/2016 00:08:00] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 00:08:02] "GET /admin/teofibotweb/stickerresponse/7/change/ HTTP/1.1" 200 10840
+[07/Dec/2016 00:08:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-07 00:08:07.285064) while time zone support is active.
+  RuntimeWarning)
+[07/Dec/2016 00:08:51] "GET /admin/teofibotweb/sticker/64/change/ HTTP/1.1" 200 7553
+[07/Dec/2016 00:08:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-07 00:08:56.947339) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-07 00:09:08.419340) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-07 00:09:08.654541) while time zone support is active.
+  RuntimeWarning)
+[07/Dec/2016 00:09:33] "POST /admin/teofibotweb/stickerresponse/7/change/ HTTP/1.1" 302 0
+[07/Dec/2016 00:09:33] "GET /admin/teofibotweb/stickerresponse/ HTTP/1.1" 200 5222
+[07/Dec/2016 00:09:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 00:10:03] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 18894
+[07/Dec/2016 00:10:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 00:10:09] "GET /admin/teofibotweb/sticker/3/change/ HTTP/1.1" 200 7557
+[07/Dec/2016 00:10:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 00:10:14] "POST /admin/teofibotweb/sticker/3/change/ HTTP/1.1" 302 0
+[07/Dec/2016 00:10:14] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 19085
+[07/Dec/2016 00:10:14] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 00:10:22] "GET /admin/teofibotweb/sticker/5/change/ HTTP/1.1" 200 7566
+[07/Dec/2016 00:10:22] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 00:10:29] "POST /admin/teofibotweb/sticker/5/change/ HTTP/1.1" 302 0
+[07/Dec/2016 00:10:29] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 19089
+[07/Dec/2016 00:10:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 00:10:42] "GET /admin/teofibotweb/stickerresponse/7/change/ HTTP/1.1" 200 10860
+[07/Dec/2016 00:10:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 00:10:48] "POST /admin/teofibotweb/stickerresponse/7/change/ HTTP/1.1" 302 0
+[07/Dec/2016 00:10:48] "GET /admin/teofibotweb/stickerresponse/ HTTP/1.1" 200 5222
+[07/Dec/2016 00:10:48] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 00:13:31] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 18894
+[07/Dec/2016 00:13:31] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[07/Dec/2016 00:13:31] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[07/Dec/2016 00:13:31] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[07/Dec/2016 00:13:31] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[07/Dec/2016 00:13:31] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[07/Dec/2016 00:13:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 00:13:31] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[07/Dec/2016 00:13:31] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[07/Dec/2016 00:13:32] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[07/Dec/2016 00:13:32] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[07/Dec/2016 00:13:32] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[07/Dec/2016 00:13:32] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[07/Dec/2016 00:13:32] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[07/Dec/2016 00:13:32] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[07/Dec/2016 00:13:32] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[07/Dec/2016 00:13:32] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+2016-12-07 00:14:34,356 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15.0)",)': /bot230721037:AAFoiOPvOkvOHdVfF5Bi0veAS7qtaueIX0M/getUpdates
+2016-12-07 00:15:14,398 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x6cc89710>: Failed to establish a new connection: [Errno -2] Name or service not known',)': /bot230721037:AAFoiOPvOkvOHdVfF5Bi0veAS7qtaueIX0M/getUpdates
+2016-12-07 00:17:42,525 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15.0)",)': /bot230721037:AAFoiOPvOkvOHdVfF5Bi0veAS7qtaueIX0M/getUpdates
+2016-12-07 00:18:22,553 - urllib3.connectionpool - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x6ccfe490>: Failed to establish a new connection: [Errno -2] Name or service not known',)': /bot230721037:AAFoiOPvOkvOHdVfF5Bi0veAS7qtaueIX0M/getUpdates
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-07 01:03:44.324484) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-07 01:22:59.198010) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-07 01:23:11.495182) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-07 02:09:21.629320) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-07 02:10:51.395977) while time zone support is active.
+  RuntimeWarning)
+[07/Dec/2016 07:04:41] "GET /admin/teofibotweb/textinputpattern/ HTTP/1.1" 200 7542
+[07/Dec/2016 07:04:41] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[07/Dec/2016 07:04:41] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[07/Dec/2016 07:04:41] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[07/Dec/2016 07:04:41] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[07/Dec/2016 07:04:41] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[07/Dec/2016 07:04:41] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[07/Dec/2016 07:04:41] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[07/Dec/2016 07:04:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 07:04:41] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[07/Dec/2016 07:04:41] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[07/Dec/2016 07:04:41] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[07/Dec/2016 07:04:41] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[07/Dec/2016 07:04:41] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[07/Dec/2016 07:04:41] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[07/Dec/2016 07:04:41] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[07/Dec/2016 07:04:41] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[07/Dec/2016 15:08:49] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 18894
+Not Found: /favicon.ico
+[07/Dec/2016 15:08:54] "GET /favicon.ico HTTP/1.1" 404 1941
+[07/Dec/2016 15:08:56] "GET /admin/teofibotweb/stickerresponse/ HTTP/1.1" 200 5012
+[07/Dec/2016 15:10:13] "GET /admin/ HTTP/1.1" 200 8709
+[07/Dec/2016 15:10:13] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[07/Dec/2016 15:10:13] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[07/Dec/2016 15:10:13] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[07/Dec/2016 15:10:13] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[07/Dec/2016 15:10:13] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[07/Dec/2016 15:10:13] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[07/Dec/2016 15:10:13] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[07/Dec/2016 15:10:13] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[07/Dec/2016 15:10:16] "GET /admin/teofibotweb/textinputpattern/ HTTP/1.1" 200 7542
+[07/Dec/2016 15:10:17] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[07/Dec/2016 15:10:17] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[07/Dec/2016 15:10:17] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[07/Dec/2016 15:10:17] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[07/Dec/2016 15:10:17] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[07/Dec/2016 15:10:17] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[07/Dec/2016 15:10:17] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 15:10:17] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[07/Dec/2016 15:10:17] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[07/Dec/2016 15:10:17] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[07/Dec/2016 15:10:17] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[07/Dec/2016 15:10:23] "GET /admin/teofibotweb/textinputpattern/add/ HTTP/1.1" 200 12074
+[07/Dec/2016 15:10:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 15:10:23] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[07/Dec/2016 15:10:23] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[07/Dec/2016 15:10:23] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[07/Dec/2016 15:10:23] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[07/Dec/2016 15:12:35] "GET /admin/teofibotweb/autoresponse/add/?_to_field=id&_popup=1 HTTP/1.1" 200 4929
+[07/Dec/2016 15:12:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 15:13:35] "POST /admin/teofibotweb/autoresponse/add/?_to_field=id&_popup=1 HTTP/1.1" 200 370
+[07/Dec/2016 15:13:35] "GET /static/admin/js/popup_response.js HTTP/1.1" 200 569
+[07/Dec/2016 15:13:42] "GET /admin/teofibotweb/autoresponse/add/?_to_field=id&_popup=1 HTTP/1.1" 200 4929
+[07/Dec/2016 15:13:42] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 15:14:53] "POST /admin/teofibotweb/autoresponse/add/?_to_field=id&_popup=1 HTTP/1.1" 200 371
+[07/Dec/2016 15:14:59] "POST /admin/teofibotweb/textinputpattern/add/ HTTP/1.1" 302 0
+[07/Dec/2016 15:14:59] "GET /admin/teofibotweb/textinputpattern/ HTTP/1.1" 200 8004
+[07/Dec/2016 15:14:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 15:14:59] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[07/Dec/2016 15:15:27] "GET /admin/teofibotweb/textinputpattern/15/change/ HTTP/1.1" 200 12559
+[07/Dec/2016 15:15:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 15:15:29] "GET /admin/teofibotweb/ HTTP/1.1" 200 4439
+[07/Dec/2016 15:15:31] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 10677
+[07/Dec/2016 15:15:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 15:15:33] "GET /admin/teofibotweb/autoresponse/27/change/ HTTP/1.1" 200 6252
+[07/Dec/2016 15:15:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 15:15:39] "POST /admin/teofibotweb/autoresponse/27/change/ HTTP/1.1" 302 0
+[07/Dec/2016 15:15:39] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 10887
+[07/Dec/2016 15:15:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
