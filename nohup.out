@@ -1315,3 +1315,38 @@ IOError: [Errno 2] No such file or directory: 'resources/pics/sabor.gif'
 [07/Dec/2016 17:09:43] "POST /admin/teofibotweb/autoresponse/30/change/ HTTP/1.1" 302 0
 [07/Dec/2016 17:09:43] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 11657
 [07/Dec/2016 17:09:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py:76: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+
+System check identified 5 issues (0 silenced).
+[07/Dec/2016 19:01:00] "GET /admin HTTP/1.1" 301 0
+[07/Dec/2016 19:01:00] "GET /admin/ HTTP/1.1" 200 8831
+[07/Dec/2016 19:01:05] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 13623
+[07/Dec/2016 19:01:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 19:01:10] "GET /admin/teofibotweb/autoresponse/23/change/ HTTP/1.1" 200 7150
+[07/Dec/2016 19:01:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 19:01:19] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 13623
+[07/Dec/2016 19:01:24] "GET /admin/teofibotweb/autoresponse/22/change/ HTTP/1.1" 200 7224
+[07/Dec/2016 19:01:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 19:01:28] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 13623
+[07/Dec/2016 19:01:30] "GET /admin/teofibotweb/autoresponse/23/change/ HTTP/1.1" 200 7150
+[07/Dec/2016 19:01:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 19:01:49] "POST /admin/teofibotweb/autoresponse/23/change/ HTTP/1.1" 302 0
+[07/Dec/2016 19:01:49] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 13829
+[07/Dec/2016 19:01:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
