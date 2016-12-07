@@ -137,6 +137,13 @@ class TeofiBot():
 							bot.sendPhoto(chat_id=update.message.chat_id, photo=photo)
 							print "mande"
 
+						if r.document!=None and r.document!="":
+							document_path=self.get_resource_path("documents", r.document)
+							document=open(document_path.encode('utf-8'), 'rb')
+							print document
+							bot.sendDocument(chat_id=update.message.chat_id, document=document)
+							print "mande"
+
 						if r.sticker!=None and r.sticker!="":
 							sticker_id=r.sticker
 							bot.sendSticker(chat_id=update.message.chat_id, sticker=sticker_id)
