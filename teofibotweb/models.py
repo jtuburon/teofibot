@@ -75,3 +75,14 @@ class StickerResponse(models.Model):
 
 	def __str__(self):
 		return self.label.encode('utf8')
+
+def resource_directory_path(instance, filename):
+	return '{0}/{1}'.format(instance.type, filename)
+
+class Resource(models.Model):
+	label = models.CharField(max_length=200, default="NOT LABELED")
+	type = models.CharField(max_length=200, choices=RESOURCE_TYPE_CHOICES)
+	file = models.FileField(upload_to=resource_directory_path)
+
+	def __str__(self):
+		return self.label.encode('utf8')

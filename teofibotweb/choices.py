@@ -28,3 +28,19 @@ POWER_CHOICES = (
 	(HIGH, 'High'),
 	(VERY_HIGH, 'Very High'),
 )
+
+
+###################################################
+### RESOURCE TYPE CHOICES
+###################################################
+AUDIO = 'sounds'
+PICS = 'pics'
+SMILEYS = 'smileys'
+DOCUMENTS = 'documents'
+
+RESOURCE_TYPE_CHOICES = (
+	(AUDIO, 'Audio File'),
+	(PICS, 'Picture'),
+	(SMILEYS, 'Smiley Picture'),
+	(DOCUMENTS, 'Documents, GIFs, ANY FILE')
+)
