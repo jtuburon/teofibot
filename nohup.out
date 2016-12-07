@@ -1159,3 +1159,159 @@ Not Found: /favicon.ico
 [07/Dec/2016 15:15:39] "POST /admin/teofibotweb/autoresponse/27/change/ HTTP/1.1" 302 0
 [07/Dec/2016 15:15:39] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 10887
 [07/Dec/2016 15:15:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py:76: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+
+System check identified 5 issues (0 silenced).
+[07/Dec/2016 16:24:43] "GET /admin/ HTTP/1.1" 200 8818
+[07/Dec/2016 16:25:41] "GET /admin/teofibotweb/textinputpattern/ HTTP/1.1" 200 7788
+[07/Dec/2016 16:25:41] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:26:24] "GET /admin/teofibotweb/textinputpattern/12/change/ HTTP/1.1" 200 12593
+[07/Dec/2016 16:26:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:27:10] "POST /admin/teofibotweb/textinputpattern/12/change/ HTTP/1.1" 302 0
+[07/Dec/2016 16:27:10] "GET /admin/teofibotweb/textinputpattern/ HTTP/1.1" 200 8011
+[07/Dec/2016 16:27:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:28:39] "GET /admin/teofibotweb/textinputpattern/add/ HTTP/1.1" 200 12248
+[07/Dec/2016 16:28:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:31:06] "GET /admin/teofibotweb/autoresponse/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5383
+[07/Dec/2016 16:31:06] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:32:10] "GET /admin/teofibotweb/textinputpattern/add/ HTTP/1.1" 200 12248
+[07/Dec/2016 16:32:16] "GET /admin/teofibotweb/ HTTP/1.1" 200 4439
+[07/Dec/2016 16:32:17] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 18894
+[07/Dec/2016 16:32:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:32:23] "GET /admin/teofibotweb/sticker/5/change/ HTTP/1.1" 200 7586
+[07/Dec/2016 16:32:23] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:33:10] "POST /admin/teofibotweb/autoresponse/add/?_to_field=id&_popup=1 HTTP/1.1" 200 374
+[07/Dec/2016 16:33:25] "POST /admin/teofibotweb/textinputpattern/add/ HTTP/1.1" 302 0
+[07/Dec/2016 16:33:25] "GET /admin/teofibotweb/textinputpattern/ HTTP/1.1" 200 8260
+[07/Dec/2016 16:33:25] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:33:27] "GET /admin/teofibotweb/textinputpattern/16/change/ HTTP/1.1" 200 12691
+[07/Dec/2016 16:33:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:33:38] "POST /admin/teofibotweb/textinputpattern/16/change/ HTTP/1.1" 302 0
+[07/Dec/2016 16:33:39] "GET /admin/teofibotweb/textinputpattern/ HTTP/1.1" 200 8262
+[07/Dec/2016 16:33:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:34:20] "GET /admin/teofibotweb/textinputpattern/16/change/ HTTP/1.1" 200 12691
+[07/Dec/2016 16:34:20] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:34:50] "POST /admin/teofibotweb/textinputpattern/16/change/ HTTP/1.1" 302 0
+[07/Dec/2016 16:34:50] "GET /admin/teofibotweb/textinputpattern/ HTTP/1.1" 200 8262
+[07/Dec/2016 16:34:50] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+2016-12-07 16:34:59,964 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py", line 102, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/pi/teofibot/core/teofibot.py", line 125, in responseToATextCachonism
+    responseText= r.message % user
+TypeError: not enough arguments for format string
+[07/Dec/2016 16:35:19] "GET /admin/teofibotweb/textinputpattern/16/change/ HTTP/1.1" 200 12694
+[07/Dec/2016 16:35:19] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:35:27] "GET /admin/teofibotweb/ HTTP/1.1" 200 4439
+[07/Dec/2016 16:35:29] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 10923
+[07/Dec/2016 16:35:29] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:35:31] "GET /admin/teofibotweb/autoresponse/28/change/ HTTP/1.1" 200 6777
+[07/Dec/2016 16:35:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:35:46] "POST /admin/teofibotweb/autoresponse/28/change/ HTTP/1.1" 302 0
+[07/Dec/2016 16:35:46] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 11136
+[07/Dec/2016 16:35:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:37:16] "GET /admin/teofibotweb/autoresponse/28/change/ HTTP/1.1" 200 6773
+[07/Dec/2016 16:37:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:37:30] "POST /admin/teofibotweb/textinputpattern/16/change/ HTTP/1.1" 302 0
+[07/Dec/2016 16:37:30] "GET /admin/teofibotweb/textinputpattern/ HTTP/1.1" 200 8262
+[07/Dec/2016 16:37:30] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:41:55] "GET /admin/teofibotweb/ HTTP/1.1" 200 4439
+[07/Dec/2016 16:41:59] "GET /admin/teofibotweb/textinputpattern/ HTTP/1.1" 200 8039
+[07/Dec/2016 16:41:59] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:42:09] "GET /admin/teofibotweb/textinputpattern/16/change/ HTTP/1.1" 200 12697
+[07/Dec/2016 16:42:09] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:42:36] "POST /admin/teofibotweb/textinputpattern/16/change/ HTTP/1.1" 302 0
+[07/Dec/2016 16:42:36] "GET /admin/teofibotweb/textinputpattern/ HTTP/1.1" 200 8262
+[07/Dec/2016 16:42:36] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:45:12] "GET /admin/teofibotweb/textinputpattern/16/change/ HTTP/1.1" 200 12692
+[07/Dec/2016 16:45:12] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:46:02] "POST /admin/teofibotweb/textinputpattern/16/change/ HTTP/1.1" 302 0
+[07/Dec/2016 16:46:02] "GET /admin/teofibotweb/textinputpattern/ HTTP/1.1" 200 8262
+[07/Dec/2016 16:46:02] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:50:07] "GET /admin/teofibotweb/textinputpattern/7/change/ HTTP/1.1" 200 12663
+[07/Dec/2016 16:50:07] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:50:17] "GET /admin/teofibotweb/textinputpattern/ HTTP/1.1" 200 8039
+[07/Dec/2016 16:50:24] "GET /admin/teofibotweb/textinputpattern/1/change/ HTTP/1.1" 200 12707
+[07/Dec/2016 16:50:24] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:50:34] "GET /admin/teofibotweb/textinputpattern/ HTTP/1.1" 200 8039
+[07/Dec/2016 16:50:40] "GET /admin/teofibotweb/ HTTP/1.1" 200 4439
+[07/Dec/2016 16:50:43] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 10923
+[07/Dec/2016 16:50:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:50:49] "GET /admin/teofibotweb/autoresponse/19/change/ HTTP/1.1" 200 6774
+[07/Dec/2016 16:50:49] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:51:04] "POST /admin/teofibotweb/autoresponse/19/change/ HTTP/1.1" 302 0
+[07/Dec/2016 16:51:04] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 11136
+[07/Dec/2016 16:51:04] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+2016-12-07 16:51:11,386 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/dispatcher.py", line 270, in process_update
+    handler.handle_update(update, self)
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py", line 102, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/pi/teofibot/core/teofibot.py", line 135, in responseToATextCachonism
+    photo=open(photo_path.encode('utf-8'), 'rb')
+IOError: [Errno 2] No such file or directory: 'resources/pics/sabor.gif'
+[07/Dec/2016 16:59:08] "GET /admin/teofibotweb/autoresponse/19/change/ HTTP/1.1" 200 6792
+[07/Dec/2016 16:59:08] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 16:59:13] "POST /admin/teofibotweb/autoresponse/19/change/ HTTP/1.1" 302 0
+[07/Dec/2016 16:59:13] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 11136
+[07/Dec/2016 16:59:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 17:01:21] "GET /admin/teofibotweb/ HTTP/1.1" 200 4439
+[07/Dec/2016 17:01:28] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 10923
+[07/Dec/2016 17:01:28] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 17:01:31] "GET /admin/teofibotweb/autoresponse/add/ HTTP/1.1" 200 6370
+[07/Dec/2016 17:01:31] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 17:03:46] "GET /admin/teofibotweb/textinputpattern/add/ HTTP/1.1" 200 12342
+[07/Dec/2016 17:03:46] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 17:04:10] "GET /admin/teofibotweb/autoresponse/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5383
+[07/Dec/2016 17:04:10] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 17:05:11] "POST /admin/teofibotweb/autoresponse/add/?_to_field=id&_popup=1 HTTP/1.1" 200 377
+[07/Dec/2016 17:05:13] "GET /admin/teofibotweb/autoresponse/add/?_to_field=id&_popup=1 HTTP/1.1" 200 5383
+[07/Dec/2016 17:05:13] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 17:05:46] "POST /admin/teofibotweb/autoresponse/add/?_to_field=id&_popup=1 HTTP/1.1" 200 387
+[07/Dec/2016 17:05:50] "POST /admin/teofibotweb/textinputpattern/add/ HTTP/1.1" 302 0
+[07/Dec/2016 17:05:51] "GET /admin/teofibotweb/textinputpattern/ HTTP/1.1" 200 8511
+[07/Dec/2016 17:05:51] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-07 17:08:43.421454) while time zone support is active.
+  RuntimeWarning)
+[07/Dec/2016 17:08:52] "GET /admin/teofibotweb/ HTTP/1.1" 200 4439
+[07/Dec/2016 17:08:54] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 19128
+[07/Dec/2016 17:08:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 17:08:56] "GET /admin/teofibotweb/sticker/66/change/ HTTP/1.1" 200 7548
+[07/Dec/2016 17:08:56] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 17:09:27] "POST /admin/teofibotweb/sticker/66/change/ HTTP/1.1" 302 0
+[07/Dec/2016 17:09:27] "GET /admin/teofibotweb/sticker/ HTTP/1.1" 200 19309
+[07/Dec/2016 17:09:27] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 17:09:31] "GET /admin/teofibotweb/ HTTP/1.1" 200 4439
+[07/Dec/2016 17:09:33] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 11431
+[07/Dec/2016 17:09:33] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 17:09:35] "GET /admin/teofibotweb/autoresponse/29/change/ HTTP/1.1" 200 6754
+[07/Dec/2016 17:09:35] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 17:09:38] "POST /admin/teofibotweb/autoresponse/29/change/ HTTP/1.1" 302 0
+[07/Dec/2016 17:09:39] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 11647
+[07/Dec/2016 17:09:39] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 17:09:40] "GET /admin/teofibotweb/autoresponse/30/change/ HTTP/1.1" 200 6766
+[07/Dec/2016 17:09:40] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
+[07/Dec/2016 17:09:43] "POST /admin/teofibotweb/autoresponse/30/change/ HTTP/1.1" 302 0
+[07/Dec/2016 17:09:43] "GET /admin/teofibotweb/autoresponse/ HTTP/1.1" 200 11657
+[07/Dec/2016 17:09:43] "GET /admin/jsi18n/ HTTP/1.1" 200 3217
