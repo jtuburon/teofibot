@@ -1676,3 +1676,173 @@ Not Found: /favicon.ico
   RuntimeWarning)
 /usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-12 23:42:45.245423) while time zone support is active.
   RuntimeWarning)
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+
+System check identified 5 issues (0 silenced).
+[13/Dec/2016 19:59:39] "GET /admin/ HTTP/1.1" 200 9234
+Not Found: /favicon.ico
+[13/Dec/2016 19:59:40] "GET /favicon.ico HTTP/1.1" 404 2054
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+
+System check identified 5 issues (0 silenced).
+Error: That port is already in use.
+[13/Dec/2016 19:59:49] "GET /admin/ HTTP/1.1" 200 9234
+[13/Dec/2016 19:59:49] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[13/Dec/2016 19:59:49] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[13/Dec/2016 19:59:50] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[13/Dec/2016 19:59:50] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[13/Dec/2016 19:59:50] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[13/Dec/2016 19:59:50] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[13/Dec/2016 19:59:50] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[13/Dec/2016 19:59:50] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[13/Dec/2016 20:00:01] "GET /teofibotweb/control?command=PWR_ON HTTP/1.1" 200 2
+[13/Dec/2016 20:01:01] "GET /teofibotweb/control?command=PWR_ON HTTP/1.1" 200 2
+[13/Dec/2016 20:02:14] "GET /teofibotweb/control?command=PWR_ON HTTP/1.1" 200 2
+[13/Dec/2016 20:04:00] "GET /teofibotweb/control?command=PWR_ON HTTP/1.1" 200 2
+[13/Dec/2016 20:04:32] "GET /teofibotweb/control?command=PWR_ON HTTP/1.1" 200 2
+[13/Dec/2016 20:05:56] "GET /teofibotweb/control?command=PWR_ON HTTP/1.1" 200 2
+[13/Dec/2016 20:08:33] "GET /teofibotweb/control?command=PWR_ON HTTP/1.1" 200 2
+[13/Dec/2016 20:10:08] "GET /teofibotweb/control?command=PWR_ON HTTP/1.1" 200 2
+[13/Dec/2016 20:11:56] "GET /teofibotweb/control?command=PWR_ON HTTP/1.1" 200 2
+[13/Dec/2016 20:16:39] "GET /teofibotweb/control?command=PWR_ON HTTP/1.1" 200 2
+[13/Dec/2016 20:18:28] "GET /teofibotweb/control?command=PWR_ON HTTP/1.1" 200 2
+[13/Dec/2016 20:23:19] "GET /teofibotweb/control?command=PWR_ON HTTP/1.1" 200 2
+[13/Dec/2016 20:24:06] "GET /teofibotweb/control?command=PWR_ON HTTP/1.1" 200 2
+[13/Dec/2016 20:24:38] "GET /teofibotweb/control?command=PWR_ON HTTP/1.1" 200 2
+[13/Dec/2016 20:24:44] "GET /teofibotweb/control?command=PWR_ON HTTP/1.1" 200 2
+[13/Dec/2016 20:24:52] "GET /teofibotweb/control?command=PWR_ON HTTP/1.1" 200 2
+[13/Dec/2016 20:25:12] "GET /teofibotweb/control?command=PWR_ON HTTP/1.1" 200 2
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py:76: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+
+System check identified 5 issues (0 silenced).
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py:76: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+[14/Dec/2016 17:08:02] "GET /admin HTTP/1.1" 301 0
+[14/Dec/2016 17:08:02] "GET /admin/ HTTP/1.1" 200 9234
+[14/Dec/2016 17:08:02] "GET /static/admin/css/base.css HTTP/1.1" 200 15937
+[14/Dec/2016 17:08:02] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 434
+[14/Dec/2016 17:08:03] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[14/Dec/2016 17:08:03] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[14/Dec/2016 17:08:03] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[14/Dec/2016 17:08:03] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 82564
+[14/Dec/2016 17:08:03] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 80304
+Not Found: /favicon.ico
+[14/Dec/2016 17:08:03] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 81348
+[14/Dec/2016 17:08:03] "GET /favicon.ico HTTP/1.1" 404 2054
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py:76: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+
+System check identified 5 issues (0 silenced).
+[14/Dec/2016 17:09:09] "GET /admin/ HTTP/1.1" 200 9234
+[14/Dec/2016 17:09:09] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[14/Dec/2016 17:09:09] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[14/Dec/2016 17:09:09] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[14/Dec/2016 17:09:09] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[14/Dec/2016 17:09:09] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[14/Dec/2016 17:09:09] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[14/Dec/2016 17:09:09] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[14/Dec/2016 17:09:09] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py:76: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+
+System check identified 5 issues (0 silenced).
+[14/Dec/2016 17:12:01] "GET /admin/ HTTP/1.1" 200 9234
+[14/Dec/2016 17:12:01] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[14/Dec/2016 17:12:01] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[14/Dec/2016 17:12:01] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[14/Dec/2016 17:12:01] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[14/Dec/2016 17:12:01] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[14/Dec/2016 17:12:01] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[14/Dec/2016 17:12:01] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[14/Dec/2016 17:12:01] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py:76: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+
+System check identified 5 issues (0 silenced).
