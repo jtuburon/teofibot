@@ -15,6 +15,12 @@ def send_lirc_command(device_id, message):
 	call(command)
 
 # Create your views here.
+
+def index(request):
+	context ={}
+	return render(request, 'ircontrol/index.html', context)
+
+
 def control(request):
 	device_name=request.GET.get('device', '')
 	action_name=request.GET.get('action', '')
