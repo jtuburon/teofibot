@@ -7,9 +7,12 @@ from subprocess import call
 
 from models import *
 
+import re
 
 def send_lirc_command(device_id, message):
-	call(['irsend', 'SEND_ONCE', device_id, message])
+	command =['irsend', 'SEND_ONCE', device_id] + re.split("\s+", message)
+	print command
+	call(command)
 
 # Create your views here.
 def control(request):
