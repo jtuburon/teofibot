@@ -20,6 +20,9 @@ class DeviceAction(models.Model):
 	name = models.CharField(max_length=200)
 	rc_button_name = models.CharField(max_length=200, blank=True, null=True)
 	lirc_name = models.CharField(max_length=400)
+	layout_row = models.IntegerField(default=0)
+	layout_col = models.IntegerField(default=0)
+	button_class = models.CharField(max_length=20 , choices=RC_BUTTONS, default=BLUE_BUTTON)
 	device = models.ForeignKey(Device)
 
 	def __str__(self):

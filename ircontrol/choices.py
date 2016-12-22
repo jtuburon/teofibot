@@ -44,3 +44,23 @@ DEVICE_LOCATIONS = (
 	(BATHROOM, 'BATHROOM'),
 	(OTHER, 'OTHER')
 )
+
+
+###################################################
+### BUTTON STYLES
+###################################################
+LIGHTBLUE_BUTTON = 'btn-info'
+BLUE_BUTTON = 'btn-primary'
+YELLOW_BUTTON = 'btn-warning'
+GREEN_BUTTON = 'btn-success'
+RED_BUTTON = 'btn-danger'
+
+RC_BUTTONS = (
+	(LIGHTBLUE_BUTTON, 'LIGHT BLUE'),
+	(BLUE_BUTTON, 'BLUE'),
+	(YELLOW_BUTTON, 'YELLOW'),
+	(GREEN_BUTTON, 'GREEN'),
+	(RED_BUTTON, 'RED')
+)
+
+

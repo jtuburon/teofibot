@@ -3,7 +3,7 @@
     <div class="text-center">
       <div class = "btn-group-horizontal">
         {% for action in row %}
-           <button id="{{action.lirc_name}}" type = "button" class = "btn btn-danger">{{action.rc_button_name}}</button>
+           <button id="{{action.lirc_name}}" type = "button" class = "btn {{action.button_class}}">{{action.rc_button_name}}</button>
         {% endfor %}
       </div>
     </div>

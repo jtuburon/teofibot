@@ -12,3 +12,8 @@ function send_ir_command(action){
 	    }
 	});
 }
+
+function render_device(action){
+	var device= $('#device').val();
+	$('#device-wrapper').load('render?device='+ device);
+}

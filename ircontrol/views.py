@@ -44,3 +44,21 @@ def control(request):
 	
 	return response
 
+def render_device(request):
+	device_name=request.GET.get('device', '')
+	device= Device.objects.get(name=device_name)
+	layout=[]
+	actions= device.deviceaction_set.order_by('layout_row', 'layout_col')
+
+	current_row_id=None
+	current_row=None
+
+	for a in actions:
+		if a.layout_row!=current_row_id:
+			current_row=[a]
+			layout.append(current_row)
+			current_row_id=a.layout_row
+		else:
+			current_row.append(a)
+	context ={"device": device, "actions_layout": layout}
+	return render(request, 'ircontrol/render_device.html', context)
