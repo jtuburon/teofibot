@@ -3983,3 +3983,67 @@ irsend: unknown command: "BTN_PWR"
 irsend: command failed: SEND_ONCE TeofiStereo BTN_PWR
 irsend: unknown command: "BTN_PWR"
 [22/Dec/2016 21:03:29] "GET /ircontrol/control?device=TeofiStereo&action=POWER_ON/OFF HTTP/1.1" 200 58
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py:76: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+
+System check identified 5 issues (0 silenced).
+[22/Dec/2016 21:11:15] "GET /admin/ HTTP/1.1" 200 10279
+[22/Dec/2016 21:11:24] "GET /ircontrol/ HTTP/1.1" 200 5613
+[22/Dec/2016 21:11:27] "GET /ircontrol/ HTTP/1.1" 200 5613
+[22/Dec/2016 21:11:28] "GET /ircontrol/ HTTP/1.1" 200 5613
+[22/Dec/2016 21:11:30] "GET /ircontrol/ HTTP/1.1" 200 5613
+[22/Dec/2016 21:11:36] "GET /ircontrol/ HTTP/1.1" 200 5613
+[22/Dec/2016 21:11:36] "GET /static/js/ircontrol.js HTTP/1.1" 200 309
+[22/Dec/2016 21:11:37] "GET /static/bower_components/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 200 36868
+[22/Dec/2016 21:11:37] "GET /static/bower_components/jquery/dist/jquery.min.js HTTP/1.1" 200 84380
+[22/Dec/2016 21:11:37] "GET /static/bower_components/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 200 121260
+[22/Dec/2016 21:11:38] "GET /ircontrol/ HTTP/1.1" 200 5613
+[22/Dec/2016 21:11:39] "GET /ircontrol/ HTTP/1.1" 200 5613
+[22/Dec/2016 21:12:02] "GET /ircontrol/ HTTP/1.1" 200 5613
+[22/Dec/2016 21:12:05] "GET /ircontrol/ HTTP/1.1" 200 5613
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py:76: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+
+System check identified 5 issues (0 silenced).
+[22/Dec/2016 21:12:23] "GET /ircontrol/ HTTP/1.1" 200 5613
+[22/Dec/2016 21:12:24] "GET /ircontrol/ HTTP/1.1" 200 5613
+[22/Dec/2016 21:12:59] "GET /ircontrol/ HTTP/1.1" 200 5613
+[22/Dec/2016 21:13:00] "GET /ircontrol/ HTTP/1.1" 200 5613
+[22/Dec/2016 21:13:03] "GET /ircontrol/ HTTP/1.1" 200 5613
+[22/Dec/2016 21:13:24] "GET /static/bower_components/bootstrap/dist/css/bootstrap.min.css.map HTTP/1.1" 200 54416
+[22/Dec/2016 21:13:24] "GET /static/bower_components/jquery/dist/jquery.min.map HTTP/1.1" 200 127576
+[22/Dec/2016 21:13:26] "GET /ircontrol/ HTTP/1.1" 200 5613
+[22/Dec/2016 21:31:15] "GET /ircontrol/ HTTP/1.1" 200 5613
+[22/Dec/2016 21:45:06] "GET /ircontrol/ HTTP/1.1" 200 5613
