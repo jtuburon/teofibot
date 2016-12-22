@@ -1,0 +1,21 @@
+<div class = "btn-group-vertical" >    
+  {% for row in actions_layout %}
+    <div class="text-center">
+      <div class = "btn-group-horizontal">
+        {% for action in row %}
+           <button id="{{action.lirc_name}}" type = "button" class = "btn btn-danger">{{action.rc_button_name}}</button>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</div>
+<script type="text/javascript">
+{% for row in actions_layout %}
+  {% for action in row %}
+    $('#{{action.lirc_name}}').on('click', function (e) {
+        send_ir_command("{{action.name}}");
+    });     
+  {% endfor %}
+{% endfor %}
+
+</script>

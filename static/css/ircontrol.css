@@ -1,0 +1,17 @@
+.btn-group-vertical > button{
+    margin-bottom:3px;
+    margin-top:3px;
+}
+
+.btn-group-vertical .btn-group-horizontal{
+    margin-bottom:3px;
+    margin-top:3px;
+}
+
+
+.btn-group-horizontal >button{
+	text-align: center;
+	width: inherit;
+	display: inline-block;	
+}
+
