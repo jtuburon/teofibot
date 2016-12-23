@@ -17,7 +17,8 @@ def send_lirc_command(device_id, message):
 # Create your views here.
 
 def index(request):
-	context ={}
+	devices= Device.objects.order_by('name')
+	context ={"devices": devices}
 	return render(request, 'ircontrol/index.html', context)
 
 

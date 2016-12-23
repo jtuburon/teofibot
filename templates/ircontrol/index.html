@@ -54,9 +54,9 @@
 
         <div id="page-wrapper">
             <select id="device" class="form-control">
-                <option value="TeofiStereo">TeofiStereo</option>
-                <option value="TeofiTV">TeofiTV</option>
-                <option value="TeofiAC">TeofiAC</option>
+                {% for device in devices %}
+                    <option value="{{device.name}}">{{device.name}}</option>
+                {% endfor %}
             </select>
             <div id="device-wrapper">
                 {% include "ircontrol/render_device.html" %}
