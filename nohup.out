@@ -4848,3 +4848,339 @@ Not Found: /ircontrol/index.html
 [23/Dec/2016 01:20:23] "GET /ircontrol/control?device=TeofiStereo&action=POWER_ON/OFF HTTP/1.1" 200 58
 [23/Dec/2016 01:22:11] "GET /ircontrol/render?device=TeofiAC HTTP/1.1" 200 3210
 [23/Dec/2016 01:22:56] "GET /ircontrol/render?device=TeofiTV HTTP/1.1" 200 9748
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py:76: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+
+System check identified 5 issues (0 silenced).
+[23/Dec/2016 03:58:58] "GET /ircontrol/ HTTP/1.1" 200 2672
+[23/Dec/2016 03:58:58] "GET /static/bower_components/bootstrap/dist/js/bootstrap.min.js HTTP/1.1" 304 0
+[23/Dec/2016 03:58:58] "GET /static/bower_components/jquery/dist/jquery.min.js HTTP/1.1" 304 0
+[23/Dec/2016 03:58:58] "GET /static/css/ircontrol.css HTTP/1.1" 304 0
+[23/Dec/2016 03:58:58] "GET /static/bower_components/bootstrap/dist/css/bootstrap.min.css HTTP/1.1" 304 0
+[23/Dec/2016 03:58:59] "GET /static/js/ircontrol.js HTTP/1.1" 304 0
+[23/Dec/2016 03:59:01] "GET /ircontrol/render?device=TeofiClaroSTB HTTP/1.1" 200 7452
+[23/Dec/2016 03:59:49] "GET /ircontrol/ HTTP/1.1" 200 2672
+[23/Dec/2016 03:59:49] "GET /static/css/ircontrol.css HTTP/1.1" 304 0
+[23/Dec/2016 03:59:49] "GET /static/js/ircontrol.js HTTP/1.1" 304 0
+[23/Dec/2016 03:59:52] "GET /ircontrol/render?device=TeofiClaroSTB HTTP/1.1" 200 7452
+[23/Dec/2016 03:59:55] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 03:59:55] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 03:59:55] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 03:59:55] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 03:59:56] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 03:59:56] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 03:59:56] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 03:59:56] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 03:59:57] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 03:59:57] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 03:59:57] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 03:59:57] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 03:59:58] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 03:59:58] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_UP HTTP/1.1" 200 58
+[23/Dec/2016 03:59:58] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 03:59:59] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_UP HTTP/1.1" 200 58
+[23/Dec/2016 03:59:59] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_UP HTTP/1.1" 200 58
+[23/Dec/2016 03:59:59] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_UP HTTP/1.1" 200 58
+[23/Dec/2016 03:59:59] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_UP HTTP/1.1" 200 58
+[23/Dec/2016 04:00:00] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_UP HTTP/1.1" 200 58
+[23/Dec/2016 04:00:00] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_UP HTTP/1.1" 200 58
+[23/Dec/2016 04:00:00] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_UP HTTP/1.1" 200 58
+[23/Dec/2016 04:00:00] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_UP HTTP/1.1" 200 58
+[23/Dec/2016 04:00:00] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_UP HTTP/1.1" 200 58
+[23/Dec/2016 04:00:03] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:00:04] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:00:04] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:00:04] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:00:04] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:00:05] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:00:05] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:00:05] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:00:05] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:00:07] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:00:08] "GET /ircontrol/control?device=TeofiClaroSTB&action=CHANNEL_UP HTTP/1.1" 200 58
+[23/Dec/2016 04:00:11] "GET /ircontrol/control?device=TeofiClaroSTB&action=CHANNEL_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:00:15] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:00:15] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:00:15] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:00:15] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:00:16] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:00:16] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+Performing system checks...
+
+December 23, 2016 - 03:58:51
+Django version 1.10.4, using settings 'teofibot.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_UP
+VOLUME_UP
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_UP']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_UP
+VOLUME_UP
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_UP']
+TeofiClaroSTB
+VOLUME_UP
+VOLUME_UP
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_UP']
+TeofiClaroSTB
+VOLUME_UP
+VOLUME_UP
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_UP']
+TeofiClaroSTB
+VOLUME_UP
+VOLUME_UP
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_UP']
+TeofiClaroSTB
+VOLUME_UP
+VOLUME_UP
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_UP']
+TeofiClaroSTB
+VOLUME_UP
+VOLUME_UP
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_UP']
+TeofiClaroSTB
+VOLUME_UP
+VOLUME_UP
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_UP']
+TeofiClaroSTB
+VOLUME_UP
+VOLUME_UP
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_UP']
+TeofiClaroSTB
+VOLUME_UP
+VOLUME_UP
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_UP']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+CHANNEL_UP
+CHANNEL_UP
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_CHANNEL_UP']
+TeofiClaroSTB
+CHANNEL_DOWN
+CHANNEL_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_CHANNEL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irsend', 'SEND_ONCE', u'CLARO_STB', u'BTN_VOL_DOWN']
+TeofiClaroSTB
+VOLUME_DOWN
+VOLUME_DOWN
+['irse[23/Dec/2016 04:00:16] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:00:16] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:00:16] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:00:17] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:00:17] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:00:17] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:00:17] "GET /ircontrol/control?device=TeofiClaroSTB&action=VOLUME_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:02:11] "GET /ircontrol/render?device=TeofiStereo HTTP/1.1" 200 3572
+[23/Dec/2016 04:02:13] "GET /ircontrol/control?device=TeofiStereo&action=POWER_ON/OFF HTTP/1.1" 200 58
+[23/Dec/2016 04:02:15] "GET /ircontrol/control?device=TeofiStereo&action=POWER_ON/OFF HTTP/1.1" 200 58
+[23/Dec/2016 04:02:25] "GET /ircontrol/control?device=TeofiStereo&action=POWER_ON/OFF HTTP/1.1" 200 58
+[23/Dec/2016 04:02:28] "GET /ircontrol/control?device=TeofiStereo&action=POWER_ON/OFF HTTP/1.1" 200 58
+[23/Dec/2016 04:02:32] "GET /ircontrol/render?device=TeofiTV HTTP/1.1" 200 9748
+[23/Dec/2016 04:02:34] "GET /ircontrol/render?device=TeofiClaroSTB HTTP/1.1" 200 7452
+[23/Dec/2016 04:02:36] "GET /ircontrol/control?device=TeofiClaroSTB&action=POWER_ON_OFF HTTP/1.1" 200 58
+[23/Dec/2016 04:02:38] "GET /ircontrol/control?device=TeofiClaroSTB&action=NUMBER3 HTTP/1.1" 200 58
+[23/Dec/2016 04:02:40] "GET /ircontrol/control?device=TeofiClaroSTB&action=POWER_ON_OFF HTTP/1.1" 200 58
+[23/Dec/2016 04:02:47] "GET /ircontrol/control?device=TeofiClaroSTB&action=POWER_ON_OFF HTTP/1.1" 200 58
+[23/Dec/2016 04:02:59] "GET /ircontrol/control?device=TeofiClaroSTB&action=CHANNEL_UP HTTP/1.1" 200 58
+[23/Dec/2016 04:03:01] "GET /ircontrol/control?device=TeofiClaroSTB&action=CHANNEL_DOWN HTTP/1.1" 200 58
+[23/Dec/2016 04:22:30] "GET /ircontrol/render?device=TeofiAC HTTP/1.1" 200 3210
+[23/Dec/2016 04:22:32] "GET /ircontrol/render?device=TeofiClaroSTB HTTP/1.1" 200 7452
+[23/Dec/2016 04:22:33] "GET /ircontrol/control?device=TeofiClaroSTB&action=POWER_ON_OFF HTTP/1.1" 200 58
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-23 04:58:37.476163) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-23 05:08:35.651304) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-23 05:08:58.233994) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-23 05:09:02.140528) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-23 05:10:12.347966) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-23 05:10:29.171466) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-23 05:11:02.557298) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-23 05:11:25.936321) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-23 05:17:08.932562) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-23 05:17:10.226549) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-23 05:17:12.401782) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-23 05:17:13.595518) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-23 14:47:44.101877) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-23 15:11:10.566999) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-23 15:11:14.157766) while time zone support is active.
+  RuntimeWarning)
+2016-12-23 15:58:30,311 - urllib3.connectionpool - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15.0)",)': /bot230721037:AAFoiOPvOkvOHdVfF5Bi0veAS7qtaueIX0M/getUpdates
+Not Found: /favicon.ico
+[23/Dec/2016 16:06:06] "GET /favicon.ico HTTP/1.1" 404 2052
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-23 16:13:18.151259) while time zone support is active.
+  RuntimeWarning)
+[23/Dec/2016 16:21:17] "GET /ircontrol/render?device=TeofiStereo HTTP/1.1" 200 3572
+[23/Dec/2016 16:21:19] "GET /ircontrol/render?device=TeofiAC HTTP/1.1" 200 3210
+[23/Dec/2016 16:21:21] "GET /ircontrol/render?device=TeofiClaroSTB HTTP/1.1" 200 7452
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py:76: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+System check identified some issues:
+
+WARNINGS:
+teofibotweb.Sticker.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.reply_tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.stickers: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.StickerResponse.tags: (fields.W340) null has no effect on ManyToManyField.
+teofibotweb.TextInputPattern.senders: (fields.W340) null has no effect on ManyToManyField.
+
+System check identified 5 issues (0 silenced).
+Error: That port is already in use.
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-25 06:35:57.793719) while time zone support is active.
+  RuntimeWarning)
+/usr/local/lib/python2.7/dist-packages/django/db/models/fields/__init__.py:1430: RuntimeWarning: DateTimeField Sticker.pub_date received a naive datetime (2016-12-25 18:00:48.678949) while time zone support is active.
+  RuntimeWarning)
