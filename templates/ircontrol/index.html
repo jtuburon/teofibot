@@ -69,7 +69,9 @@
     <script type="text/javascript">
         $('#device').on('change', function() {
             render_device(this.value);
-        })
+        });
+	var device_name=$('#device').val()
+	render_device(device_name);
     </script>
 </body>
 </html>
