@@ -1,33 +1,31 @@
 import cv2 as cv;
 
 def addSmiles(input_photo):
-        smile = cv.imread("resources/smileys/smile.png")
-        smile_mat = cv.cv.fromarray(smile)
+        smile_mat = cv.imread("resources/smileys/smile.png", cv.IMREAD_UNCHANGED)
 
-        image = cv.imread(input_photo)
-        haar = cv.cv.Load('resources/haar/haarcascade_frontalface_default.xml')
-        image_mat = cv.cv.fromarray(image)
+        image_mat  = cv.imread(input_photo, cv.IMREAD_UNCHANGED)
+        gray = cv.cvtColor(image_mat, cv.COLOR_BGR2GRAY)
 
-        storage = cv.cv.CreateMemStorage()
-
-        faces= cv.cv.HaarDetectObjects(image_mat, haar, storage, 1.2, 2, cv.cv.CV_HAAR_DO_CANNY_PRUNING, (100,100))
+        haar = cv.CascadeClassifier('resources/haar/haarcascade_frontalface_default.xml')
+        
+        
+        faces = haar.detectMultiScale(gray, 1.3, 5)
         
         if len(faces):
-                for (x,y,w,h),n in faces:
-                        cv.rectangle(image,(x,y),(x+w,y+h),(255,0,0),1)
-
-                        sub = cv.cv.GetSubRect(image_mat, (x,y,w,h))
-                        # Creamos una matriz con el tamano del rectangulo detectado para hacer un resize del SMILE dentro de esta matriz                       
-                        thumbnail = cv.cv.CreateMat(h, w, cv.CV_8UC3)
-                        # Hacemos el resize
-
-                        cv.cv.Resize(smile_mat, thumbnail)
-                        # Copiamos la imagen del SMILE redimensiona     do a la region detectada
+                for (x,y,w,h) in faces:
+                        sub = image_mat[y:y+h,x:x+w]
+                        resized= cv.resize(smile_mat, (w,h) )
                         for i in range(h):
-                                for j in range(w):
-                                        sub[i,j]= thumbnail[i,j]
+                            for j in range(w):
+                                color1 = sub[i, j]
+                                color2 = resized[i, j]
+                                alpha = color2[3] / 255.0
+                                new_color = [ (1 - alpha) * color1[0] + alpha * color2[0],
+                                        (1 - alpha) * color1[1] + alpha * color2[1],
+                                        (1 - alpha) * color1[2] + alpha * color2[2] ]
+                                sub[i,j]= new_color
                 outFile = "c_"+ input_photo+".jpg"
-                cv.imwrite(outFile, image)
+                cv.imwrite(outFile, image_mat)
                 return True, outFile
         else:
                 return False, ""
